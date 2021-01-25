@@ -1,10 +1,10 @@
-# Heading 1
-___
+# Group 8 - Mjøsa
 
-Tekst
+## About the project
+Text...
 
-**Bold text**
+## The text for our project
+Text...
 
-Eksempel:
-https://markdown-it.github.io
-
+## How we will implement Separation of Concerns and BEM
+Text...
