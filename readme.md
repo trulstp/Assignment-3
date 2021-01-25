@@ -35,3 +35,5 @@ Comes my favourite colour--love."
 Separation of concerns is helping to focus on one aspect of a problem at a time, and usually consists of different technologies for each of the concerns. For our project we will be using HTML, CSS and SCSS. Our styling will be separated into different categories to separate them, and make it easier to do changes and have control. Two of the subcategories we will include will at least be colours and typography in one way or another. 
 
 BEM stands for «Block element modifier» and is a naming convention used in development for making the code easier to read and understand. It is the naming convention standard that we will be using for our project to keep our CSS understandable.
+
+Test.
