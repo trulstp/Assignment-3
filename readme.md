@@ -36,4 +36,4 @@ Separation of concerns is helping to focus on one aspect of a problem at a time,
 
 BEM stands for «Block element modifier» and is a naming convention used in development for making the code easier to read and understand. It is the naming convention standard that we will be using for our project to keep our CSS understandable.
 
-Test. 2.
+Test. 2. 3. feature 1.
