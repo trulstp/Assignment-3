@@ -1,5 +1,5 @@
 # Group 8 - Mjøsa
-
+We chose this name because Mjøsa is the largest lake in Norway.
 ## About the project
 Text...
 
