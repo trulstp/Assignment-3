@@ -32,4 +32,6 @@ And said, "By mixing all of these
 Comes my favourite colour--love."
 
 ## How we will implement Separation of Concerns and BEM
-Text...
+Separation of Concerns...
+
+BEM stands for «Block element modifier» and is a naming convention used in development for making the code easier to read and understand. It is the naming convention standard that we will be using for our project to keep our CSS understandable.
