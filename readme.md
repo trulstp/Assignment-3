@@ -1,11 +1,12 @@
 # Group 8 - Mjøsa
 We chose this name because Mjøsa is the largest lake in Norway.
+
 ## About the project
 In this project we will design an animation based on our chosen text.
 
-in the project we will use BEM naming conventions to familiarize us with it and provide clarity.
+In the project we will use BEM naming conventions to familiarize us with it and provide clarity.
 
-we will use github to store all our updates to the animation, so that we are used to working in groups on github.
+We will use GitHub to store all our updates to the animation, so that we are used to working in groups on GitHub.
 
 ## The text for our project
 
