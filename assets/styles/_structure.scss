@@ -1,0 +1,127 @@
+html {
+    background: url(../images/mitchell-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header main"
+      "nav main"
+      "footer main";
+}
+
+.flex-container {
+    height: 100vh;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+header { 
+    position: relative;
+    text-align: center;
+
+    grid-area: header;
+    align-self: center;
+
+    color: white;
+  }
+
+.header__title {
+
+}
+
+.header__subtitle {
+    position: relative;
+    top: -15px;
+    left: 65px;
+}
+
+nav { 
+    grid-area: nav;
+    align-self: center;
+    }
+
+.menu {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    list-style-type: none;
+
+    color: white;
+
+    font-size: larger;
+
+    li {
+        padding: 20px;
+    }
+
+    &__menuItem--active li {
+        font-weight: bold;
+
+        background-color: #6367CB;
+    }
+
+    &__menuItem li:hover {
+        opacity: 50%;
+    }
+}
+
+main { 
+    grid-area: main;
+  }
+
+footer {
+    grid-area: footer;
+    align-self: end;
+    padding: 20px;
+}
+
+.box { 
+    grid-area: 1 / 1 / 4 / 2; 
+
+    background-color: rgba(72, 76, 163, 0.85);
+
+    z-index: -100;
+}
+
+
+/* unvisited link */
+a:link {
+  color: white;
+
+  text-decoration: none;
+
+  opacity: 100%;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+
+    opacity: 100%;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+

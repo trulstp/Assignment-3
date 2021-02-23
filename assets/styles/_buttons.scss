@@ -1,0 +1,22 @@
+$button-opacity: 50%;
+
+.info-button {
+    color: white;
+
+    &:hover {
+        opacity: $button-opacity;
+    }
+}
+
+
+.start-button {
+    padding: 15px 25px;
+    border-radius: 20px 20px;
+
+    color: white;
+    background-color: rgb(57, 60, 127);
+
+    &:hover {
+        opacity: $button-opacity;
+    }
+}
