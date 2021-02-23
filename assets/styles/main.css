@@ -88,12 +88,12 @@ nav {
   padding: 20px;
 }
 
-.menu__menuItem--active li {
+.menu__menuItem--active {
   font-weight: bold;
   background-color: #6367CB;
 }
 
-.menu__menuItem li:hover {
+.menu__menuItem a:hover {
   opacity: 50%;
 }
 

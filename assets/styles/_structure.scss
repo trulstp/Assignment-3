@@ -69,13 +69,13 @@ nav {
         padding: 20px;
     }
 
-    &__menuItem--active li {
+    &__menuItem--active {
         font-weight: bold;
 
         background-color: #6367CB;
     }
 
-    &__menuItem li:hover {
+    &__menuItem a:hover {
         opacity: 50%;
     }
 }
