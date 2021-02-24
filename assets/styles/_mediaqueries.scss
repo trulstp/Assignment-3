@@ -8,6 +8,7 @@
     }
 
     .grid-container {
+        height: calc(var(--vh, 1vh) * 100);
         grid-template-columns: 1fr;
         grid-template-rows: 80px 1.8fr;
         grid-template-areas:
