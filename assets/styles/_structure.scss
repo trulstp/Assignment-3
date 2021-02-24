@@ -76,6 +76,10 @@ nav {
         background-color: #6367CB;
     }
 
+    &__menuItem--hidden {
+        display: none;
+    }
+
     &__menuItem a:hover {
         opacity: 50%;
     }
