@@ -85,8 +85,13 @@ nav {
   font-size: larger;
 }
 
-.menu li {
+.menu__menuItem a {
+  display: block;
   padding: 20px 25px;
+}
+
+.menu__menuItem a:hover {
+  opacity: 50%;
 }
 
 .menu__menuItem--active {
@@ -96,10 +101,6 @@ nav {
 
 .menu__menuItem--hidden {
   display: none;
-}
-
-.menu__menuItem a:hover {
-  opacity: 50%;
 }
 
 main {
@@ -129,6 +130,7 @@ footer {
   z-index: -100;
 }
 
+/* These must be specified more and changed... */
 /* unvisited link */
 a:link {
   color: white;
