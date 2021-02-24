@@ -1,0 +1,51 @@
+/* If screen width is 600px or smaller - Mobile */
+@media (max-width: 600px) {
+    html {
+        background-image: url(../images/mitchell-background-mobile.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 1.8fr;
+        grid-template-areas:
+        "header"
+        "main";
+        // WHY?
+        overflow: hidden;
+    }
+
+    .flex-container {
+        height: 100%;
+    }
+
+    header {
+        
+    }
+
+    .header__title {
+        font-size: x-large;
+        margin: 0;
+    }
+    
+    .header__subtitle {
+        font-size: small;
+        margin: 0;
+        top: 0px;
+        left: 47px;
+    }
+
+    nav { 
+        display: none;
+        }
+
+    footer {
+        display: none;
+    }
+        
+    .box { 
+        grid-area: header;
+    }
+}

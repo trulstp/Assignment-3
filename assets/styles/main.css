@@ -9,7 +9,8 @@ body {
 }
 
 html {
-  background: url(../images/mitchell-background.jpg);
+  background-image: url(../images/mitchell-background.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: Helvetica, Arial, sans-serif;
@@ -172,5 +173,47 @@ a:active {
 
 .start-button:hover {
   opacity: 50%;
+}
+
+/* If screen width is 600px or smaller - Mobile */
+@media (max-width: 600px) {
+  html {
+    background-image: url(../images/mitchell-background-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .grid-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 80px 1.8fr;
+        grid-template-rows: 80px 1.8fr;
+        grid-template-areas: "header" "main";
+    overflow: hidden;
+  }
+  .flex-container {
+    height: 100%;
+  }
+  .header__title {
+    font-size: x-large;
+    margin: 0;
+  }
+  .header__subtitle {
+    font-size: small;
+    margin: 0;
+    top: 0px;
+    left: 47px;
+  }
+  nav {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  .box {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header;
+  }
 }
 /*# sourceMappingURL=main.css.map */
