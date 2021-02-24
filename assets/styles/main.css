@@ -188,6 +188,7 @@ a:active {
     background-size: cover;
   }
   .grid-container {
+    height: calc(var(--vh, 1vh) * 100);
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 80px 1.8fr;
