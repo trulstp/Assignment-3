@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="tekst">
+        <span id="sentence1">Man is many colours child:</span><br>
+        <span id="sentence2">Some are yellow, some are brown.</span><br>
+        <span id="sentence3">And some are black as sightlessness,</span><br>
+        <span id="sentence4">Some white as eiderdown."</span><br>
+    </p>
+</body>
+<script>
+    rndColor(1);
+    rndColor(2);
+    rndColor(3);
+    rndColor(4);
+    function rndColor(number){
+        document.getElementById("sentence"+number).style.color = "RGB(" + Math.floor(Math.random()*201) + "," + Math.floor(Math.random()*201) + "," + Math.floor(Math.random()*201) + ")";
+    }
+</script>
+</html>
