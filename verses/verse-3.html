@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verse 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        body {
+            background-color: whitesmoke;
+            margin: 0;
+        }
+
+        p {
+            font-size: xx-large;
+        }
+
+        .flex-container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .box {
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            border-radius: 20px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            animation: skyBackground;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        .content {
+            height: 100%;
+            width: 100%;
+        }
+
+        .content>p {
+            padding: 0 1em;
+            font-size: xx-large;
+            color: black;
+        }
+
+        .fill {
+            height: 100%;
+            width: 100%;
+            background-color: #bfc1c2;
+            border-radius: 0 0 20px 20px;
+            opacity: 0;
+
+            animation: fadeIn, fadeInUp;
+            animation-duration: 2s;
+            animation-delay: 5s;
+            animation-fill-mode: forwards;
+        }
+
+        /* Animations */
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes skyBackground {
+            from {
+                background-color: whitesmoke;
+            }
+
+            to {
+                background-color: #87ceeb;
+            }
+        }
+
+        @keyframes textColorRed {
+            from {
+                color: black;
+            }
+
+            to {
+                color: red;
+            }
+        }
+
+        .verse-line-1 {
+            opacity: 0;
+            animation: fadein, fadeInLeft;
+            animation-duration: 2s;
+            animation-delay: 0s;
+            animation-fill-mode: forwards;
+        }
+
+        .verse-line-2 {
+            opacity: 0;
+            animation: fadein, fadeInLeft;
+            animation-duration: 2s;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        .verse-line-3 {
+            opacity: 0;
+            animation: fadein, fadeInLeft;
+            animation-duration: 2s;
+            animation-delay: 8s;
+            animation-fill-mode: forwards;
+        }
+
+        .verse-line-3__red {
+            animation: textColorRed;
+            animation-duration: 0.5s;
+            animation-delay: 10s;
+            animation-fill-mode: forwards;
+        }
+
+        .verse-line-4 {
+            opacity: 0;
+            animation: fadein, fadeInLeft;
+            animation-duration: 2s;
+            animation-delay: 12s;
+            animation-fill-mode: forwards;
+        }
+
+        button {
+            opacity: 0;
+            margin: 2em 0;
+
+            animation: fadein;
+            animation-duration: 2s;
+            animation-delay: 15s;
+            animation-fill-mode: forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="box">
+            <div class="content">
+                <p class="verse-line-1">"I know the sky is blue,"</p>
+                <p class="verse-line-2">"And silver is the sand; she said.</p>
+                <p class="verse-line-3">And apples are the brightest <span class="verse-line-3__red">red</span>.</p>
+                <p class="verse-line-4">What colour is a man?"</p>
+            </div>
+            <div class="fill"></div>
+        </div>
+        <button>Continue</button>
+    </div>
+</body>
+
+</html>
