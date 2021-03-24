@@ -30,24 +30,33 @@ html {
 	align-content: stretch;
 }
 
-header { 
-    position: relative;
-    text-align: center;
-
+header {
     grid-area: header;
     align-self: center;
 
     color: white;
+
+    display: flex;
+	justify-content: center;
+	align-items: center;
   }
 
-.header__title {
+.header__headline {
+    display: flex;
+	flex-direction: column;
 
-}
+    width: fit-content;
+    
+    &__title {
+        font-size: 2rem;
 
-.header__subtitle {
-    position: relative;
-    top: -15px;
-    left: 65px;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    &__subtitle {
+        align-self: flex-end;
+    }
 }
 
 nav { 

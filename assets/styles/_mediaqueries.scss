@@ -10,7 +10,7 @@
     .grid-container {
         height: calc(var(--vh, 1vh) * 100);
         grid-template-columns: 1fr;
-        grid-template-rows: 80px 1.8fr;
+        grid-template-rows: auto 1.8fr;
         grid-template-areas:
         "header"
         "main";
@@ -22,18 +22,19 @@
         height: 100%;
     }
 
-    .header__title {
-        font-size: x-large;
-        margin: 0;
+    .header__headline {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        &__title {
+            font-size: 1.5rem;
+        }
+
+        &__subtitle {
+            font-size: 1rem;
+        }
     }
-    
-    .header__subtitle {
-        font-size: small;
-        margin: 0;
-        top: 0px;
-        left: 47px;
-    }
-    
+
     nav { 
         grid-area: main;
         align-self: start;
