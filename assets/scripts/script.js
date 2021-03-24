@@ -57,10 +57,18 @@ function home() {
 
     list[0].classList.add("menu__menuItem--active"); // Changes the clicked menu item to active
 
-    content.innerHTML = `<a class="start-button" href="#" onclick="verse1()">Start animation<i class="play-icon fa fa-play fa-lg"></i></a>`; // Changes the inner content of the div
+    content.innerHTML = `<a class="start-button" href="#" onclick="playVerse1()">Start animation<i class="play-icon fa fa-play fa-lg"></i></a>`; // Changes the inner content of the div
 }
 
 function verse1() {
+    // Toggles the menu
+    toggleMenu();
+
+    // Displays and plays verse 1
+    playVerse1();
+}
+
+function playVerse1() {
     let content = document.getElementsByClassName("flex-container")[0]; // Reference to div for displaying content
     
     let active = document.getElementsByClassName("menu__menuItem--active"); // Reference to the active menu element
@@ -72,9 +80,6 @@ function verse1() {
 
     background.style.backgroundColor = "lightgrey";  // The background of the home page
     */
-
-    // Toggles the menu
-    toggleMenu();
 
     active[0].classList.remove("menu__menuItem--active"); // Removes the current active class item
 
