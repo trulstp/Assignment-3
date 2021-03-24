@@ -4,10 +4,10 @@
     "sources": [
         "main.scss",
         "_resets.scss",
-        "_structure.scss",
+        "_layout.scss",
         "_icons.scss",
         "_buttons.scss",
-        "_mediaqueries.scss"
+        "_layout--mobile.scss"
     ],
     "names": [],
     "file": "main.css"
