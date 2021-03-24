@@ -50,7 +50,7 @@ function home() {
     background.style.backgroundImage = "url('../images/mitchell-background.jpg')";  // The background of the home page
     */
 
-    // If the device is a mobile the menu icon will be changed
+    // Toggles the menu
     toggleMenu();
 
     active[0].classList.remove("menu__menuItem--active"); // Changes the current active item to not active
@@ -73,7 +73,7 @@ function verse1() {
     background.style.backgroundColor = "lightgrey";  // The background of the home page
     */
 
-    // If the device is a mobile the menu icon will be changed
+    // Toggles the menu
     toggleMenu();
 
     active[0].classList.remove("menu__menuItem--active"); // Removes the current active class item
@@ -96,7 +96,7 @@ function verse2() {
     background.style.backgroundColor = "lightgrey";  // The background of the home page
     */
 
-    // If the device is a mobile the menu icon will be changed
+    // Toggles the menu
     toggleMenu();
 
     active[0].classList.remove("menu__menuItem--active"); // Removes the current active class item
@@ -119,7 +119,7 @@ function verse3() {
     background.style.backgroundColor = "lightgrey";  // The background of the home page
     */
 
-    // If the device is a mobile the menu icon will be changed
+    // Toggles the menu
     toggleMenu();
 
     active[0].classList.remove("menu__menuItem--active"); // Removes the current active class item
@@ -142,7 +142,7 @@ function verse4() {
     background.style.backgroundColor = "lightgrey";  // The background of the home page
     */
 
-    // If the device is a mobile the menu icon will be changed
+    // Toggles the menu
     toggleMenu();
 
     active[0].classList.remove("menu__menuItem--active"); // Removes the current active class item
@@ -165,7 +165,7 @@ function verse5() {
     background.style.backgroundColor = "lightgrey";  // The background of the home page
     */
 
-    // If the device is a mobile the menu icon will be changed
+    // Toggles the menu
     toggleMenu();
 
     active[0].classList.remove("menu__menuItem--active"); // Removes the current active class item
@@ -188,7 +188,7 @@ function verse5() {
     background.style.backgroundColor = "lightgrey";  // The background of the home page
     */
 
-    // If the device is a mobile the menu icon will be changed
+    // Toggles the menu
     toggleMenu();
 
     active[0].classList.remove("menu__menuItem--active"); // Removes the current active class item
@@ -211,7 +211,7 @@ function author() {
     background.style.backgroundColor = "lightgrey";  // The background of the home page
     */
 
-    // If the device is a mobile the menu icon will be changed
+    // Toggles the menu
     toggleMenu();
 
     active[0].classList.remove("menu__menuItem--active"); // Removes the current active class item
