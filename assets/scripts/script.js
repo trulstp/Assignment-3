@@ -34,6 +34,8 @@ function toggleMenu(x) {
    }
   }
 
+const img = new Image(); // Container for an image
+img.src = 'assets/images/gray-background.jpg'; // Saves the grey background into the container
 
 // ***************** FUNCTIONS FOR CHANGING CONTENT *****************
 
@@ -44,11 +46,20 @@ function home() {
 
     let list = document.querySelectorAll(".menu > li"); // Reference to all menu items
 
-    /* Must be fixed
-    let background = document.querySelector("body"); // Reference to the website background
+    let background = document.querySelector("html"); // Reference to the website background
 
-    background.style.backgroundImage = "url('../images/mitchell-background.jpg')";  // The background of the home page
-    */
+    const mediaQuery = window.matchMedia('(max-width: 600px)');
+
+    // If the screen is mobile, display the mobile background, else the desktop
+    if (mediaQuery.matches) {
+
+        background.style.backgroundImage = "url('assets/images/mitchell-background-mobile.jpg')";  // Mobile background
+
+    } else {
+
+        background.style.backgroundImage = "url('assets/images/mitchell-background.jpg')";  // Desktop background
+
+    }
 
     // Toggles the menu
     toggleMenu();
@@ -75,11 +86,13 @@ function playVerse1() {
 
     let list = document.querySelectorAll(".menu > li"); // Reference to all menu items
 
-    /* Must be fixed 
-    let background = document.querySelector("body"); // Reference to the website background
+    let background = document.querySelector("html"); // Reference to the website background
 
-    background.style.backgroundColor = "lightgrey";  // The background of the home page
-    */
+    if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
+
+        background.style.backgroundImage = "url('assets/images/gray-background.jpg')";  // The background of the home page
+
+    }
 
     active[0].classList.remove("menu__menuItem--active"); // Removes the current active class item
 
@@ -95,11 +108,13 @@ function verse2() {
 
     let list = document.querySelectorAll(".menu > li"); // Reference to all menu items
 
-    /* Must be fixed 
-    let background = document.querySelector("body"); // Reference to the website background
+    let background = document.querySelector("html"); // Reference to the website background
 
-    background.style.backgroundColor = "lightgrey";  // The background of the home page
-    */
+    if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
+
+        background.style.backgroundImage = "url('assets/images/gray-background.jpg')";  // The background of the home page
+
+    }
 
     // Toggles the menu
     toggleMenu();
@@ -118,12 +133,14 @@ function verse3() {
 
     let list = document.querySelectorAll(".menu > li"); // Reference to all menu items
 
-    /* Must be fixed 
-    let background = document.querySelector("body"); // Reference to the website background
+    let background = document.querySelector("html"); // Reference to the website background
 
-    background.style.backgroundColor = "lightgrey";  // The background of the home page
-    */
+    if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
 
+        background.style.backgroundImage = "url('assets/images/gray-background.jpg')";  // The background of the home page
+
+    }
+    
     // Toggles the menu
     toggleMenu();
 
@@ -141,11 +158,13 @@ function verse4() {
 
     let list = document.querySelectorAll(".menu > li"); // Reference to all menu items
 
-    /* Must be fixed 
-    let background = document.querySelector("body"); // Reference to the website background
+    let background = document.querySelector("html"); // Reference to the website background
 
-    background.style.backgroundColor = "lightgrey";  // The background of the home page
-    */
+    if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
+
+        background.style.backgroundImage = "url('assets/images/gray-background.jpg')";  // The background of the home page
+
+    }
 
     // Toggles the menu
     toggleMenu();
@@ -164,34 +183,13 @@ function verse5() {
 
     let list = document.querySelectorAll(".menu > li"); // Reference to all menu items
 
-    /* Must be fixed 
-    let background = document.querySelector("body"); // Reference to the website background
+    let background = document.querySelector("html"); // Reference to the website background
 
-    background.style.backgroundColor = "lightgrey";  // The background of the home page
-    */
+    if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
 
-    // Toggles the menu
-    toggleMenu();
+        background.style.backgroundImage = "url('assets/images/gray-background.jpg')";  // The background of the home page
 
-    active[0].classList.remove("menu__menuItem--active"); // Removes the current active class item
-
-    list[5].classList.add("menu__menuItem--active"); // Adds the active class to the clicked menu item
-
-    content.innerHTML = `Verse 5`;
-}
-
-function verse5() {
-    let content = document.getElementsByClassName("flex-container")[0]; // Reference to div for displaying content
-    
-    let active = document.getElementsByClassName("menu__menuItem--active"); // Reference to the active menu element
-
-    let list = document.querySelectorAll(".menu > li"); // Reference to all menu items
-
-    /* Must be fixed 
-    let background = document.querySelector("body"); // Reference to the website background
-
-    background.style.backgroundColor = "lightgrey";  // The background of the home page
-    */
+    }
 
     // Toggles the menu
     toggleMenu();
@@ -202,6 +200,7 @@ function verse5() {
 
     content.innerHTML = `Verse 5`;
 }
+
 
 function author() {
     let content = document.getElementsByClassName("flex-container")[0]; // Reference to div for displaying content
