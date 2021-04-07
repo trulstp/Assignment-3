@@ -200,27 +200,3 @@ function verse5() {
 
     content.innerHTML = `Verse 5`;
 }
-
-
-function author() {
-    let content = document.getElementsByClassName("flex-container")[0]; // Reference to div for displaying content
-    
-    let active = document.getElementsByClassName("menu__menuItem--active"); // Reference to the active menu element
-
-    let list = document.querySelectorAll(".menu > li"); // Reference to all menu items
-
-    /* Must be fixed 
-    let background = document.querySelector("body"); // Reference to the website background
-
-    background.style.backgroundColor = "lightgrey";  // The background of the home page
-    */
-
-    // Toggles the menu
-    toggleMenu();
-
-    active[0].classList.remove("menu__menuItem--active"); // Removes the current active class item
-
-    list[6].classList.add("menu__menuItem--active"); // Adds the active class to the clicked menu item
-
-    content.innerHTML = `About the author`;
-}
