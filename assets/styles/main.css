@@ -27,7 +27,11 @@ textPath {
   font-weight: 700;
 }
 
-body {
+
+
+
+html {
+
   background-image: url(../images/mitchell-background.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -44,7 +48,9 @@ body {
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
-      grid-template-areas: "header main" "nav main" "footer main";
+      grid-template-areas: "header main"
+ "nav main"
+ "footer main";
 }
 
 .flex-container {
@@ -299,7 +305,8 @@ a:active {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto 1.8fr;
         grid-template-rows: auto 1.8fr;
-        grid-template-areas: "header" "main";
+        grid-template-areas: "header"
+ "main";
     overflow: hidden;
   }
   .flex-container {

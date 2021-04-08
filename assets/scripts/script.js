@@ -100,6 +100,8 @@ function playVerse1() {
     list[1].classList.add("menu__menuItem--active"); // Adds the active class to the clicked menu item
 
     content.innerHTML = `
+
+        <div class="flex-container"
             <div class="verse1_layout_box">
                 <p class="verse1_line1">
                     I met a child a year ago
@@ -129,7 +131,9 @@ function playVerse1() {
                 <p class="verse1_line4">
                     "What <span class="verse1_span_colour">colour</span> is a tree?"
                 </p>
-            </div>`;
+            </div>
+        </div>`;
+
 }
 
 function verse2() {
