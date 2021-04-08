@@ -1,6 +1,6 @@
 /* If screen width is 600px or smaller - Mobile */
 @media (max-width: 600px) {
-    html {
+    body {
         background-image: url(../images/mitchell-background-mobile.jpg);
         background-position: center;
         background-repeat: no-repeat;
@@ -12,8 +12,8 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto 1.8fr;
         grid-template-areas:
-        "header"
-        "main";
+            "header"
+            "main";
         // WHY?
         overflow: hidden;
     }
@@ -35,17 +35,17 @@
         }
     }
 
-    nav { 
+    nav {
         grid-area: main;
         align-self: start;
         z-index: 100;
         background-color: black;
         display: none;
-        }
+    }
 
     .menu__menuItem--hidden {
         display: none;
-        }
+    }
 
     .header__menu-icon {
         display: inline-block;
@@ -53,32 +53,47 @@
         left: 30px;
         cursor: pointer;
 
-        &--bar1, &--bar2, &--bar3 {
+        &--bar1,
+        &--bar2,
+        &--bar3 {
             width: 35px;
             height: 5px;
             background-color: white;
             margin: 6px 0;
             transition: 0.4s;
-              }
         }
+    }
 
-        .change .header__menu-icon--bar1 {
+    .change .header__menu-icon--bar1 {
         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
         transform: rotate(-45deg) translate(-9px, 6px);
-          }
-          
-        .change .header__menu-icon--bar2 {opacity: 0;}
-          
-        .change .header__menu-icon--bar3 {
+    }
+
+    .change .header__menu-icon--bar2 {
+        opacity: 0;
+    }
+
+    .change .header__menu-icon--bar3 {
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
-          }
+    }
 
     footer {
         display: none;
-        }
-        
-    .box { 
+    }
+
+    .box {
         grid-area: header;
     }
+<<<<<<< HEAD
 }
+=======
+    .verse1_layout_box {
+        width: 80%;
+        margin-top: 20px;
+    }
+    .verse1_line2 {
+        margin-left: 50px;
+    }
+}
+>>>>>>> c3b1124396b7b50f74a88d51a87458fc819d1877
