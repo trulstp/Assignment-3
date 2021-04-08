@@ -46,7 +46,7 @@ function home() {
 
     let list = document.querySelectorAll(".menu > li"); // Reference to all menu items
 
-    let background = document.querySelector("html"); // Reference to the website background
+    let background = document.querySelector("body"); // Reference to the website background
 
     const mediaQuery = window.matchMedia('(max-width: 600px)');
 
@@ -86,7 +86,7 @@ function playVerse1() {
 
     let list = document.querySelectorAll(".menu > li"); // Reference to all menu items
 
-    let background = document.querySelector("html"); // Reference to the website background
+    let background = document.querySelector("body"); // Reference to the website background
 
     if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
 
@@ -94,12 +94,14 @@ function playVerse1() {
 
     }
 
+
     active[0].classList.remove("menu__menuItem--active"); // Removes the current active class item
 
     list[1].classList.add("menu__menuItem--active"); // Adds the active class to the clicked menu item
 
     content.innerHTML = `
-        <div class="flex-container">
+
+        <div class="flex-container"
             <div class="verse1_layout_box">
                 <p class="verse1_line1">
                     I met a child a year ago
@@ -131,6 +133,7 @@ function playVerse1() {
                 </p>
             </div>
         </div>`;
+
 }
 
 function verse2() {
@@ -140,7 +143,7 @@ function verse2() {
 
     let list = document.querySelectorAll(".menu > li"); // Reference to all menu items
 
-    let background = document.querySelector("html"); // Reference to the website background
+    let background = document.querySelector("body"); // Reference to the website background
 
     if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
 
@@ -165,7 +168,7 @@ function verse3() {
 
     let list = document.querySelectorAll(".menu > li"); // Reference to all menu items
 
-    let background = document.querySelector("html"); // Reference to the website background
+    let background = document.querySelector("body"); // Reference to the website background
 
     if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
 
@@ -190,7 +193,7 @@ function verse4() {
 
     let list = document.querySelectorAll(".menu > li"); // Reference to all menu items
 
-    let background = document.querySelector("html"); // Reference to the website background
+    let background = document.querySelector("body"); // Reference to the website background
 
     if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
 
@@ -215,7 +218,7 @@ function verse5() {
 
     let list = document.querySelectorAll(".menu > li"); // Reference to all menu items
 
-    let background = document.querySelector("html"); // Reference to the website background
+    let background = document.querySelector("body"); // Reference to the website background
 
     if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
 
