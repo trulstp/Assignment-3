@@ -141,11 +141,11 @@ function verse2() {
 
     let background = document.querySelector("body"); // Reference to the website background
 
-    /* if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
+    if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
 
         background.style.backgroundImage = "url('assets/images/gray-background.jpg')";  // The background of the home page
 
-    } */
+    }
 
     // Toggles the menu
     toggleMenu();
