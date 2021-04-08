@@ -139,4 +139,59 @@ a:hover {
 a:active {
   color: white;
 }
+.verse1_layout_box {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+    opacity: 0.88;
+    font-size: 1em;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: $alternate-color;
+    z-index: 1;
+            }
+.verse1_line1 {
+margin-top: 60px;
+margin-left:70px;
+padding-bottom: 30px; 
+}
+.verse1_line2{
+    position:relative;
+    left: 10px;
+}
+.verse1_smiley1 .verse1_smiley2 {
+    border: 4px solid black;
+}
+.verse1_svg {
+    position: relative;
+      bottom: 30px;
+}
+.verse1_line4 {
+position: relative;
+bottom: 40px;
+width: 200px;
+height: 50px;
+padding: 15px 0px 0px 10px;
+background: #000000;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+color: $alternate-color
+}
 
+
+.verse1_line4:after
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0 15px 40px;
+border-color: #000000 transparent;
+display: block;
+width: 0;
+z-index: 1;
+top: -40px;
+left: 96px;
+}

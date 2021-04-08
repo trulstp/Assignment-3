@@ -98,7 +98,50 @@ function playVerse1() {
 
     list[1].classList.add("menu__menuItem--active"); // Adds the active class to the clicked menu item
 
-    content.innerHTML = `Verse 1`;
+    content.innerHTML = `<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First Verse</title>
+        <link rel="stylesheet" href="../assets/styles/main.css">
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="verse1_layout_box">
+                <p class="verse1_line1">
+                    I met a child a year ago
+                </p>
+                <p class="verse1_line2">
+                    Whose eyes would never see.
+                </p>
+                <div class="verse1_smiley1">
+                    <figure>
+                    <img src="./assets/images/smiley.png">
+                    </figure>
+                </div>
+                <div class="verse1_smiley2">
+                    <figure>
+                    <img src="./assets/images/smiley.png">
+                    </figure>
+                </div>
+                <svg class="verse1_svg" viewbox="0 0 490 150">
+                    <path id="curve" fill="transparent"
+                    d="M125.4,50.3c69.1,66.7,180.9,66.7,240,0"/>
+                    <text width="500">
+                        <textPath xlink:href="#curve">
+                            She asked me with a timid smile,
+                        </textPath>
+                    </text>
+                </svg>
+                <p class="verse1_line4">
+                    "What <span class="verse1_span_colour">colour</span> is a tree?"
+                </p>
+            </div>
+        </div>
+    </body>
+    </html>`;
 }
 
 function verse2() {
