@@ -1,1 +1,20 @@
 // Font families and font sizes
+// Verse1 fonts
+textPath {
+    font-size: large;
+}
+.verse1_line1 {
+    font-weight: 700;
+}   
+.verse1_line2 {
+    font-family: fantasy, Georgia, sans-serif;
+    opacity: 0;
+}
+.verse1_svg {
+    opacity: 0;
+    text-decoration: underline;
+}
+.verse1_line4 {
+    opacity: 0;
+    font-weight: 700;
+}
