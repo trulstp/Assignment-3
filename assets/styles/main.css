@@ -8,6 +8,29 @@ body {
   padding: 0;
 }
 
+textPath {
+  font-size: large;
+}
+
+.verse1_line1 {
+  font-weight: 700;
+}
+
+.verse1_line2 {
+  font-family: fantasy, Georgia, sans-serif;
+  opacity: 0;
+}
+
+.verse1_svg {
+  opacity: 0;
+  text-decoration: underline;
+}
+
+.verse1_line4 {
+  opacity: 0;
+  font-weight: 700;
+}
+
 html {
   background-image: url(../images/mitchell-background.jpg);
   background-position: center;
@@ -25,7 +48,7 @@ html {
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
-      grid-template-areas: "header main" "nav main" "footer main";
+      grid-template-areas: "header main" "nav main" "footer main";
 }
 
 .flex-container {
@@ -178,6 +201,67 @@ a:active {
   color: white;
 }
 
+.verse1_layout_box {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 2fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+  opacity: 0.88;
+  font-size: 1em;
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  z-index: 1;
+}
+
+.verse1_line1 {
+  margin-top: 60px;
+  margin-left: 70px;
+  padding-bottom: 30px;
+}
+
+.verse1_line2 {
+  position: relative;
+  left: 10px;
+}
+
+.verse1_smiley1 .verse1_smiley2 {
+  border: 4px solid black;
+}
+
+.verse1_svg {
+  position: relative;
+  bottom: 30px;
+}
+
+.verse1_line4 {
+  position: relative;
+  bottom: 40px;
+  width: 200px;
+  height: 50px;
+  padding: 15px 0px 0px 10px;
+  background: #000000;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+
+.verse1_line4:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 0 15px 40px;
+  border-color: #000000 transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: -40px;
+  left: 96px;
+}
+
 .info-icon {
   padding-right: 10px;
 }
@@ -219,7 +303,7 @@ a:active {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto 1.8fr;
         grid-template-rows: auto 1.8fr;
-        grid-template-areas: "header" "main";
+        grid-template-areas: "header" "main";
     overflow: hidden;
   }
   .flex-container {
@@ -281,6 +365,541 @@ a:active {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: header;
+  }
+  .verse1_layout_box {
+    width: 80%;
+    margin-top: 20px;
+  }
+  .verse1_line1 {
+    margin-left: 50px;
+  }
+  .verse1_line2 {
+    margin-left: 50px;
+  }
+}
+
+.verse1_line1 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-column: 3 / 6;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 1;
+  -webkit-animation-name: line1;
+          animation-name: line1;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.verse1_line2 {
+  margin-left: 50px;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-column: 3 / 6;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 2;
+  -webkit-animation-name: line2;
+          animation-name: line2;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.verse1_smiley1 {
+  opacity: 0;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 4;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 3;
+  -webkit-animation-name: smiley1;
+          animation-name: smiley1;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.verse1_smiley2 {
+  opacity: 0;
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  grid-column-end: 5;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 3;
+  -webkit-animation-name: smiley2;
+          animation-name: smiley2;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.verse1_svg {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 8;
+      grid-column-end: span 8;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 5;
+  -webkit-animation-name: line3;
+          animation-name: line3;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.verse1_line4 {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 6;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  grid-row-end: 6;
+  -webkit-animation-name: line4;
+          animation-name: line4;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: 19s;
+          animation-delay: 19s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.verse1_layout_box {
+  -webkit-animation-name: box_color;
+          animation-name: box_color;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.verse1_span_colour {
+  -webkit-animation-name: span_tree;
+          animation-name: span_tree;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: 14s;
+          animation-delay: 14s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes line1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  25% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: #000000;
+  }
+  75% {
+    color: #FFFFFF;
+  }
+  100% {
+    color: #000000;
+  }
+}
+
+@keyframes line1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  25% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: #000000;
+  }
+  75% {
+    color: #FFFFFF;
+  }
+  100% {
+    color: #000000;
+  }
+}
+
+@-webkit-keyframes line2 {
+  /* ----------------------------------------------
+ * Generated by Animista on 2021-4-8 11:33:48
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+  /**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+  0% {
+    color: #FFFFFF;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+    color: #000000;
+  }
+}
+
+@keyframes line2 {
+  /* ----------------------------------------------
+ * Generated by Animista on 2021-4-8 11:33:48
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+  /**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+  0% {
+    color: #FFFFFF;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+    color: #000000;
+  }
+}
+
+@keyframes line2 {
+  0% {
+    color: #FFFFFF;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+    color: #000000;
+  }
+}
+
+@-webkit-keyframes box_color {
+  0% {
+    background: #FFFFFF;
+  }
+  50% {
+    background: #000000;
+    border: 1px solid #FFFFFF;
+  }
+  100% {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+  }
+}
+
+@keyframes box_color {
+  0% {
+    background: #FFFFFF;
+  }
+  50% {
+    background: #000000;
+    border: 1px solid #FFFFFF;
+  }
+  100% {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-4-8 14:14:39
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation roll-in-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes smiley1 {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes smiley1 {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-4-8 14:19:10
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation roll-in-right
+ * ----------------------------------------
+ */
+@-webkit-keyframes smiley2 {
+  0% {
+    -webkit-transform: translateX(800px) rotate(540deg);
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes smiley2 {
+  0% {
+    -webkit-transform: translateX(800px) rotate(540deg);
+    transform: translateX(800px) rotate(540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes line3 {
+  /* ----------------------------------------------
+ * Generated by Animista on 2021-4-8 14:28:0
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+  /**
+ * ----------------------------------------
+ * animation slide-in-bottom
+ * ----------------------------------------
+ */
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes line3 {
+  /* ----------------------------------------------
+ * Generated by Animista on 2021-4-8 14:28:0
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+  /**
+ * ----------------------------------------
+ * animation slide-in-bottom
+ * ----------------------------------------
+ */
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes line4 {
+  0% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  75% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+    opacity: 1;
+  }
+}
+
+@keyframes line4 {
+  0% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  75% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes span_tree {
+  0% {
+    color: red;
+  }
+  14% {
+    color: #ff6600;
+  }
+  28% {
+    color: yellow;
+  }
+  42% {
+    color: #74cc74;
+  }
+  56% {
+    color: #00eeff;
+  }
+  70% {
+    color: #a732fa;
+  }
+  84% {
+    color: magenta;
+  }
+  100% {
+    color: #af7171;
+  }
+}
+
+@keyframes span_tree {
+  0% {
+    color: red;
+  }
+  14% {
+    color: #ff6600;
+  }
+  28% {
+    color: yellow;
+  }
+  42% {
+    color: #74cc74;
+  }
+  56% {
+    color: #00eeff;
+  }
+  70% {
+    color: #a732fa;
+  }
+  84% {
+    color: magenta;
+  }
+  100% {
+    color: #af7171;
   }
 }
 /*# sourceMappingURL=main.css.map */
