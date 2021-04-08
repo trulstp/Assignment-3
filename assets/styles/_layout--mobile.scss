@@ -14,7 +14,6 @@
         grid-template-areas:
         "header"
         "main";
-        // WHY?
         overflow: hidden;
     }
 
@@ -39,7 +38,7 @@
         grid-area: main;
         align-self: start;
         z-index: 100;
-        background-color: black;
+        background-color: rgba(72, 76, 163, 0.95);
         display: none;
         }
 
@@ -80,6 +79,7 @@
         
     .box { 
         grid-area: header;
+        background-color: rgba(72, 76, 163, 1);
     }
     .verse1_layout_box {
         width: 80%;
