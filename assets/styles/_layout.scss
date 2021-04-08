@@ -14,20 +14,20 @@ body {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "header main"
-      "nav main"
-      "footer main";
+        "header main"
+        "nav main"
+        "footer main";
 }
 
 .flex-container {
     height: 100vh;
 
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
 }
 
 header {
@@ -37,16 +37,16 @@ header {
     color: white;
 
     display: flex;
-	justify-content: center;
-	align-items: center;
-  }
+    justify-content: center;
+    align-items: center;
+}
 
 .header__headline {
     display: flex;
-	flex-direction: column;
+    flex-direction: column;
 
     width: fit-content;
-    
+
     &__title {
         font-size: 2rem;
 
@@ -59,10 +59,10 @@ header {
     }
 }
 
-nav { 
+nav {
     grid-area: nav;
     align-self: center;
-    }
+}
 
 .menu {
     margin: 0;
@@ -95,9 +95,9 @@ nav {
     }
 }
 
-main { 
+main {
     grid-area: main;
-  }
+}
 
 footer {
     grid-area: footer;
@@ -105,8 +105,8 @@ footer {
     padding: 20px;
 }
 
-.box { 
-    grid-area: 1 / 1 / 4 / 2; 
+.box {
+    grid-area: 1 / 1 / 4 / 2;
 
     background-color: rgba(72, 76, 163, 0.85);
 
@@ -116,16 +116,16 @@ footer {
 /* These must be specified more and changed... */
 /* unvisited link */
 a:link {
-  color: white;
+    color: white;
 
-  text-decoration: none;
+    text-decoration: none;
 
-  opacity: 100%;
+    opacity: 100%;
 }
 
 /* visited link */
 a:visited {
-  color: white;
+    color: white;
 }
 
 /* mouse over link */
@@ -137,8 +137,9 @@ a:hover {
 
 /* selected link */
 a:active {
-  color: white;
+    color: white;
 }
+
 .verse1_layout_box {
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -151,47 +152,51 @@ a:active {
     border-radius: 20px;
     background-color: $alternate-color;
     z-index: 1;
-            }
-.verse1_line1 {
-margin-top: 60px;
-margin-left:70px;
-padding-bottom: 30px; 
 }
-.verse1_line2{
-    position:relative;
+
+.verse1_line1 {
+    margin-top: 60px;
+    margin-left: 70px;
+    padding-bottom: 30px;
+}
+
+.verse1_line2 {
+    position: relative;
     left: 10px;
 }
+
 .verse1_smiley1 .verse1_smiley2 {
     border: 4px solid black;
 }
+
 .verse1_svg {
     position: relative;
-      bottom: 30px;
+    bottom: 30px;
 }
+
 .verse1_line4 {
-position: relative;
-bottom: 40px;
-width: 200px;
-height: 50px;
-padding: 15px 0px 0px 10px;
-background: #000000;
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 10px;
-color: $alternate-color
+    position: relative;
+    bottom: 40px;
+    width: 200px;
+    height: 50px;
+    padding: 15px 0px 0px 10px;
+    background: #000000;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: $alternate-color;
 }
 
 
-.verse1_line4:after
-{
-content: '';
-position: absolute;
-border-style: solid;
-border-width: 0 15px 40px;
-border-color: #000000 transparent;
-display: block;
-width: 0;
-z-index: 1;
-top: -40px;
-left: 96px;
+.verse1_line4:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 0 15px 40px;
+    border-color: #000000 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: -40px;
+    left: 96px;
 }

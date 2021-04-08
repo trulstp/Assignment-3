@@ -46,7 +46,7 @@ function home() {
 
     let list = document.querySelectorAll(".menu > li"); // Reference to all menu items
 
-    let background = document.querySelector("html"); // Reference to the website background
+    let background = document.querySelector("body"); // Reference to the website background
 
     const mediaQuery = window.matchMedia('(max-width: 600px)');
 
@@ -86,7 +86,7 @@ function playVerse1() {
 
     let list = document.querySelectorAll(".menu > li"); // Reference to all menu items
 
-    let background = document.querySelector("html"); // Reference to the website background
+    let background = document.querySelector("body"); // Reference to the website background
 
     if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
 
@@ -94,21 +94,12 @@ function playVerse1() {
 
     }
 
+
     active[0].classList.remove("menu__menuItem--active"); // Removes the current active class item
 
     list[1].classList.add("menu__menuItem--active"); // Adds the active class to the clicked menu item
 
-    content.innerHTML = `<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>First Verse</title>
-        <link rel="stylesheet" href="../assets/styles/main.css">
-    </head>
-    <body>
-        <div class="flex-container">
+    content.innerHTML = `
             <div class="verse1_layout_box">
                 <p class="verse1_line1">
                     I met a child a year ago
@@ -138,10 +129,7 @@ function playVerse1() {
                 <p class="verse1_line4">
                     "What <span class="verse1_span_colour">colour</span> is a tree?"
                 </p>
-            </div>
-        </div>
-    </body>
-    </html>`;
+            </div>`;
 }
 
 function verse2() {
@@ -151,13 +139,13 @@ function verse2() {
 
     let list = document.querySelectorAll(".menu > li"); // Reference to all menu items
 
-    let background = document.querySelector("html"); // Reference to the website background
+    let background = document.querySelector("body"); // Reference to the website background
 
-    if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
+    /* if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
 
         background.style.backgroundImage = "url('assets/images/gray-background.jpg')";  // The background of the home page
 
-    }
+    } */
 
     // Toggles the menu
     toggleMenu();
@@ -176,7 +164,7 @@ function verse3() {
 
     let list = document.querySelectorAll(".menu > li"); // Reference to all menu items
 
-    let background = document.querySelector("html"); // Reference to the website background
+    let background = document.querySelector("body"); // Reference to the website background
 
     if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
 
@@ -201,7 +189,7 @@ function verse4() {
 
     let list = document.querySelectorAll(".menu > li"); // Reference to all menu items
 
-    let background = document.querySelector("html"); // Reference to the website background
+    let background = document.querySelector("body"); // Reference to the website background
 
     if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
 
@@ -226,7 +214,7 @@ function verse5() {
 
     let list = document.querySelectorAll(".menu > li"); // Reference to all menu items
 
-    let background = document.querySelector("html"); // Reference to the website background
+    let background = document.querySelector("body"); // Reference to the website background
 
     if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
 
