@@ -27,7 +27,7 @@ textPath {
   font-weight: 700;
 }
 
-body {
+html {
   background-image: url(../images/mitchell-background.jpg);
   background-position: center;
   background-repeat: no-repeat;
