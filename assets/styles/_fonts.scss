@@ -17,4 +17,47 @@ textPath {
 .verse1_line4 {
     opacity: 0;
     font-weight: 700;
+<<<<<<< HEAD
 }
+=======
+}
+
+//Verse 2
+// Font faces
+$standard-font: Arial, Helvetica, sans-serif;
+$summer-font: Summer, Arial, Helvetica, sans-serif;
+$autumn-font: Autumn, Arial, Helvetica, sans-serif;
+$winter-font: Winter, Arial, Helvetica, sans-serif;
+
+//Font sizes
+//Desktop
+$d-standard-font-size: 2rem;
+$d-custom-font-size: 3rem;
+$d-custom-font-size-2: 2.5rem;
+
+//Mobile
+$m-standard-font-size: 1.25rem;
+$m-custom-font-size: 2rem;
+$m-custom-font-size-2: 1.5rem;
+
+@font-face {
+    font-family: Summer;
+    src: url(../fonts/beach.otf);
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Autumn;
+    src: url(../fonts/autumn.ttf);
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Winter;
+    src: url(../fonts/akaya.ttf);
+    font-display: swap;
+  }
+
+  $rotation-1: rotate(-10deg);
+  $rotation-2: rotate(10deg);
+>>>>>>> d141e4e258c1d5906d08937f875fda5136e4505c

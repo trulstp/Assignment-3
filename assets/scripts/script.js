@@ -152,7 +152,57 @@ function verse2() {
 
     list[2].classList.add("menu__menuItem--active"); // Adds the active class to the clicked menu item
 
-    content.innerHTML = `Verse 2`;
+    content.innerHTML = `
+    <div class="verse-2__grid-container">
+
+          <div class="verse-2__line-1">
+            <span class="verse-2__line-1--1">In</span> <span class="verse-2__line-1--2">summertime</span> <span
+              class="verse-2__line-1--1">a tree is</span>
+          </div>
+
+          <div class="verse-2__line-2">
+            <span class="verse-2__line-2--1">green</span>
+          </div>
+          
+    </div>
+
+    <div class="verse-2__grid-container--2">
+
+          <div class="verse-2__line-3">
+            <span class="verse-2__line-3--1">In</span> <span class="verse-2__line-3--2">autumn</span>
+          </div>
+
+          <div class="verse-2__line-4">
+            <span class="verse-2__line-4--1">gold</span> <span class="verse-2__line-3--1">and</span> <span
+              class="verse-2__line-4--2">red</span>
+          </div>
+
+          <div class="verse-2__leaf-1">
+            <img class="verse-2__leaf-1--size" src="assets/svgs/leaf-1.svg" alt="A leaf with red colour">
+          </div>
+
+          <div class="verse-2__leaf-2">
+            <img class="verse-2__leaf-2--size" src="assets/svgs/leaf-2.svg" alt="A leaf with gold colour">
+          </div>
+
+    </div>
+
+    <div class="verse-2__grid-container--3">
+
+          <div class="verse-2__line-5">
+            <span class="verse-2__line-5--1">In</span> <span class="verse-2__line-5--2">winter</span> <span
+              class="verse-2__line-5--1">they are</span>
+          </div>
+
+          <div class="verse-2__line-6">
+            <span class="verse-2__line-6--1">frosted white</span>
+          </div>
+
+          <div class="verse-2__line-7">
+            <span class="verse-2__line-5--1">when all their leaves are shed...</span>
+          </div>
+
+    </div>`;
 }
 
 function verse3() {

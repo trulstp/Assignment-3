@@ -1,0 +1,16 @@
+ <svg xmlns="http://www.w3.org/2000/svg" width="80" height="100">
+                  <g transform="translate(-716.253 -440.734)">
+                    <rect width="2" height="25" rx="1" transform="rotate(-50 896.965 -569.65)" fill="#8e4d21">
+                      <animateMotion
+                      path="M 0 0 V 20 Z"
+                      dur="3s" repeatCount="indefinite"/>
+                    </rect>
+                    <path
+                      d="M754.478 500.158l4.537-16.2 24.519-10.56-12.125-2.916 8.128-12.77-10.405 7.042-.344-9.165-12.571 15.314-.954-22.886-8.738 10-7.833-7.749-1.612 15.193-12.095 1.758 17.552 13.297-16.684 7.033 13.517 2.159-3.331 9.673 10.267-5.971z"
+                      fill="#db2a26">
+                      <animateMotion
+                      path="M 0 0 V 20 Z"
+                      dur="3s" repeatCount="indefinite"/>
+                    </path>
+                  </g>
+                </svg>
