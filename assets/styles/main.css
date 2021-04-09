@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -67,7 +68,7 @@ html {
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
-      grid-template-areas: "header main" "nav main" "footer main";
+      grid-template-areas: "header main" "nav main" "footer main";
 }
 
 .flex-container {
@@ -430,7 +431,7 @@ a:active {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      grid-template-areas: "line1 line1 ." ". line2 line2";
+      grid-template-areas: "line1 line1 ." ". line2 line2";
   -webkit-animation: tilt-in-fwd-tl 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: tilt-in-fwd-tl 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 0.5s;
@@ -452,7 +453,7 @@ a:active {
       grid-template-columns: auto 1fr 1fr auto;
   -ms-grid-rows: auto 1fr 1fr auto;
       grid-template-rows: auto 1fr 1fr auto;
-      grid-template-areas: ". . . ." "leaf1 line3 . ." "leaf1 line4 line4 leaf2" ". . . .";
+      grid-template-areas: ". . . ." "leaf1 line3 . ." "leaf1 line4 line4 leaf2" ". . . .";
   -webkit-animation: tilt-in-fwd-tr 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: tilt-in-fwd-tr 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 3.5s;
@@ -472,7 +473,7 @@ a:active {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "line5 line5 . . ." ". line6 line6 . ." ". . . . ." "line7 line7 line7 line7 line7";
+      grid-template-areas: "line5 line5 . . ." ". line6 line6 . ." ". . . . ." "line7 line7 line7 line7 line7";
   -webkit-animation: slide-in-elliptic-top-fwd 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-elliptic-top-fwd 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 7s;
@@ -719,6 +720,61 @@ a:active {
           animation-delay: 11s;
 }
 
+.rainbow-verse5 {
+  text-align: center;
+  font-size: 20px;
+  -webkit-animation: colorRotate 6s linear 0s infinite;
+          animation: colorRotate 6s linear 0s infinite;
+  margin: 0;
+  padding: 1px;
+}
+
+.verse-5-first {
+  white-space: nowrap;
+}
+
+.verse-5-second {
+  white-space: nowrap;
+}
+
+.verse-5-third {
+  white-space: nowrap;
+}
+
+.verse-5-fourth {
+  white-space: nowrap;
+}
+
+.div1-verse5 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-verse5 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+}
+
+.love-verse5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 100%;
+  margin-bottom: 10%;
+}
+
 .info-icon {
   padding-right: 10px;
 }
@@ -760,7 +816,7 @@ a:active {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto 1.8fr;
         grid-template-rows: auto 1.8fr;
-        grid-template-areas: "header" "main";
+        grid-template-areas: "header" "main";
     overflow: hidden;
   }
   .flex-container {
@@ -847,7 +903,7 @@ a:active {
   .verse-2__grid-container--3 {
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: ". line5 line5 . . ." ". . line6 line6 . ." ". . . . . ." ". line7 line7 line7 line7 .";
+        grid-template-areas: ". line5 line5 . . ." ". . line6 line6 . ." ". . . . . ." ". line7 line7 line7 line7 .";
   }
   .verse-2__line-1--1 {
     font-size: 1.5rem;
@@ -1495,6 +1551,341 @@ a:active {
 }
 
 @keyframes fade-in--button {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+
+.slide-in-bck-center {
+  -webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 50%;
+  margin-top: 2%;
+}
+
+.verse-5-first {
+  -webkit-animation: verse-5-first 0.6s cubic-bezier(0.23, 1, 0.32, 1) 3s both;
+  animation: verse-5-first 0.6s cubic-bezier(0.23, 1, 0.32, 1) 3s both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 50%;
+  margin-top: 8%;
+}
+
+@-webkit-keyframes verse-5-first {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes verse-5-first {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.verse-5-second {
+  -webkit-animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 5s both;
+  animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 5s both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 50%;
+  margin-top: 2%;
+}
+
+/* ----------------------------------------------
+   * Generated by Animista on 2021-4-8 13:17:58
+   * Licensed under FreeBSD License.
+   * See http://animista.net/license for more info. 
+   * w: http://animista.net, t: @cssanimista
+   * ---------------------------------------------- */
+/**
+   * ----------------------------------------
+   * animation fade-in
+   * ----------------------------------------
+   */
+@-webkit-keyframes verse-5-second {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes verse-5-second {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.verse-5-third {
+  -webkit-animation: verse-5-third 0.65s cubic-bezier(0.23, 1, 0.32, 1) 8s both;
+  animation: verse-5-third 0.65s cubic-bezier(0.23, 1, 0.32, 1) 8s both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 50%;
+  margin-top: 2%;
+}
+
+/* ----------------------------------------------
+   * Generated by Animista on 2021-4-8 14:31:31
+   * Licensed under FreeBSD License.
+   * See http://animista.net/license for more info. 
+   * w: http://animista.net, t: @cssanimista
+   * ---------------------------------------------- */
+/**
+   * ----------------------------------------
+   * animation roll-in-blurred-left
+   * ----------------------------------------
+   */
+@-webkit-keyframes verse-5-third {
+  0% {
+    -webkit-transform: translateX(-1000px) rotate(-720deg);
+    transform: translateX(-1000px) rotate(-720deg);
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes verse-5-third {
+  0% {
+    -webkit-transform: translateX(-1000px) rotate(-720deg);
+    transform: translateX(-1000px) rotate(-720deg);
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.verse-5-fourth {
+  -webkit-animation: verse-5-fourth 0.6s cubic-bezier(0.23, 1, 0.32, 1) 11s both;
+  animation: verse-5-fourth 0.6s cubic-bezier(0.23, 1, 0.32, 1) 11s both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 50%;
+  margin-top: 2%;
+}
+
+/* ----------------------------------------------
+   * Generated by Animista on 2021-4-8 14:55:52
+   * Licensed under FreeBSD License.
+   * See http://animista.net/license for more info. 
+   * w: http://animista.net, t: @cssanimista
+   * ---------------------------------------------- */
+/**
+   * ----------------------------------------
+   * animation slide-in-blurred-br
+   * ----------------------------------------
+   */
+@-webkit-keyframes verse-5-fourth {
+  0% {
+    -webkit-transform: translate(1000px, 1000px) skew(80deg, 10deg);
+    transform: translate(1000px, 1000px) skew(80deg, 10deg);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0, 0) skew(0deg, 0deg);
+    transform: translate(0, 0) skew(0deg, 0deg);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes verse-5-fourth {
+  0% {
+    -webkit-transform: translate(1000px, 1000px) skew(80deg, 10deg);
+    transform: translate(1000px, 1000px) skew(80deg, 10deg);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0, 0) skew(0deg, 0deg);
+    transform: translate(0, 0) skew(0deg, 0deg);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.fade-in-love {
+  -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 13s both;
+  animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 13s both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 50%;
+}
+
+/* ----------------------------------------------
+   * Generated by Animista on 2021-4-8 15:34:29
+   * Licensed under FreeBSD License.
+   * See http://animista.net/license for more info. 
+   * w: http://animista.net, t: @cssanimista
+   * ---------------------------------------------- */
+/**
+   * ----------------------------------------
+   * animation fade-in
+   * ----------------------------------------
+   */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
   0% {
     opacity: 0;
   }

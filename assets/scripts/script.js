@@ -277,5 +277,34 @@ function verse5() {
 
     list[5].classList.add("menu__menuItem--active"); // Adds the active class to the clicked menu item
 
-    content.innerHTML = `Verse 5`;
+    content.innerHTML = `<div class="div1-verse5">
+        
+    <span class="verse-5-first">She took her crayons from a box</span>
+    <span class="verse-5-second">And placed them in my glove</span>
+    <span class="verse-5-third">And said, "By mixing all of these"</span>
+    <span class="verse-5-fourth">Comes my favourite <p class="rainbow-verse5"> color</p> </span>
+    <span class="fade-in-love">
+
+    <svg class="love-verse5" width="100" height="100" fill-opacity="1" fill="none">
+        
+        <text class="text-verse5" x="20" y="50" fill="black" font-size="50" font-family="Arial, Helvetica, sans-serif">V
+            <animate attributeName="x" begin="13s" from="20" to="100" dur="2s" repeatCount="1" fill="freeze"></animate>
+        </text>
+
+        <text class="text-verse5" x="60" y="50" fill="black" font-size="50" font-family="Arial, Helvetica, sans-serif">L
+            <animate attributeName="x" begin="13s" from="60" to="20" dur="2s" repeatCount="1" fill="freeze"></animate>
+        </text>
+
+        <text class="text-verse5" x="100" y="50" fill="black" font-size="50" font-family="Arial, Helvetica, sans-serif">E
+            <animate attributeName="x" begin="13s" from="100" to="140" dur="2s" repeatCount="1" fill="freeze"></animate>
+        </text>
+
+        <text class="text-verse5" x="140" y="50" fill="black" font-size="50" font-family="Arial, Helvetica, sans-serif">O
+            <animate attributeName="x" begin="13s" from="140" to="55" dur="2s" repeatCount="1" fill="freeze"></animate>
+        </text>        
+
+</svg>
+</span>
+   
+</div>`;
 }
