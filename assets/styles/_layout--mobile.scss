@@ -102,4 +102,72 @@
     .verse1_line2 {
         margin-left: 50px;
     }
+
+    .verse-2__grid-container--3 {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          ". line5 line5 . . ."
+          ". . line6 line6 . ."
+          ". . . . . ."
+          ". line7 line7 line7 line7 .";
+      }
+    
+      .verse-2__line-1--1 {
+        font-size: $m-standard-font-size;
+      }
+    
+      .verse-2__line-1--2 {
+        font-size: $m-custom-font-size;
+    
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    
+        top: 0.2rem;
+      }
+    
+      .verse-2__line-2--1 {
+        font-size: $m-custom-font-size;
+      }
+    
+      .verse-2__line-3--1 {
+        font-size: $m-standard-font-size;
+    
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+      }
+    
+      .verse-2__line-3--2 {
+        font-size: $m-standard-font-size;
+      }
+    
+      .verse-2__line-4--1 {
+        font-size: $m-standard-font-size;
+      }
+    
+      .verse-2__line-4--2 {
+        font-size: $m-standard-font-size;
+      }
+    
+      .verse-2__line-5--1 {
+        font-size: $m-standard-font-size;
+      }
+    
+      .verse-2__line-5--2 {
+        font-size: $m-custom-font-size-2;
+    
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+      }
+    
+      .verse-2__line-6--1 {
+        font-size: $m-custom-font-size-2;
+      }
+    
+      .verse-2__leaf-1--size {
+        width: 4rem;
+      }
+    
+      .verse-2__leaf-2--size {
+        width: 3rem;
+      }
 }

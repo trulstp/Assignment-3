@@ -17,9 +17,6 @@ textPath {
 .verse1_line4 {
     opacity: 0;
     font-weight: 700;
-<<<<<<< HEAD
-}
-=======
 }
 
 //Verse 2
@@ -36,9 +33,9 @@ $d-custom-font-size: 3rem;
 $d-custom-font-size-2: 2.5rem;
 
 //Mobile
-$m-standard-font-size: 1.25rem;
-$m-custom-font-size: 2rem;
-$m-custom-font-size-2: 1.5rem;
+$m-standard-font-size: 1.5rem;
+$m-custom-font-size: 2.7rem;
+$m-custom-font-size-2: 2rem;
 
 @font-face {
     font-family: Summer;
@@ -60,4 +57,3 @@ $m-custom-font-size-2: 1.5rem;
 
   $rotation-1: rotate(-10deg);
   $rotation-2: rotate(10deg);
->>>>>>> d141e4e258c1d5906d08937f875fda5136e4505c

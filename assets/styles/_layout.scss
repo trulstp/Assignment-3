@@ -180,13 +180,7 @@ background: $primary-color;
 border-radius: 10px;
 color: $alternate-color
 }
-<<<<<<< HEAD
 
-
-=======
-
-
->>>>>>> d141e4e258c1d5906d08937f875fda5136e4505c
 .verse1_line4:after
 {
 content: '';
@@ -200,3 +194,294 @@ z-index: 1;
 top: -40px;
 left: 96px;
 }
+
+.verse-2__grid-container {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: fit-content;
+  
+    transform: $rotation-1;
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "line1 line1 ."
+      ". line2 line2";
+  
+    -webkit-animation: tilt-in-fwd-tl 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: tilt-in-fwd-tl 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 0.5s;
+  }
+  
+  .verse-2__grid-container--2 {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: fit-content;
+  
+    transform: $rotation-2;
+  
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto;
+    grid-template-rows: auto 1fr 1fr auto;
+    grid-template-areas:
+      ". . . ."
+      "leaf1 line3 . ."
+      "leaf1 line4 line4 leaf2"
+      ". . . .";
+  
+    -webkit-animation: tilt-in-fwd-tr 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: tilt-in-fwd-tr 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 3.5s;
+  }
+  
+  .verse-2__grid-container--3 {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: fit-content;
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "line5 line5 . . ."
+      ". line6 line6 . ."
+      ". . . . ."
+      "line7 line7 line7 line7 line7";
+  
+    -webkit-animation: slide-in-elliptic-top-fwd 3s
+      cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-in-elliptic-top-fwd 3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation-delay: 7s;
+  }
+  
+  .verse-2__line-1 {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: fit-content;
+  
+    grid-area: line1;
+  
+    white-space: nowrap;
+  }
+  
+  .verse-2__line-2 {
+    margin-top: 0.2em;
+  
+    width: -moz-fit-content;
+    width: fit-content;
+    height: fit-content;
+  
+    grid-area: line2;
+  
+    justify-self: center;
+  
+    white-space: nowrap;
+  }
+  
+  .verse-2__line-3 {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: fit-content;
+  
+    grid-area: line3;
+    align-self: end;
+  
+    white-space: nowrap;
+  }
+  
+  .verse-2__line-4 {
+    margin-top: 0.5em;
+  
+    width: -moz-fit-content;
+    width: fit-content;
+    height: fit-content;
+  
+    grid-area: line4;
+  
+    justify-self: end;
+  
+    white-space: nowrap;
+  }
+  
+  .verse-2__leaf-1 {
+    grid-area: leaf1;
+    align-self: center;
+  
+    -webkit-animation: tilt-in-top-1 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: tilt-in-top-1 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 5s;
+  }
+  
+  .verse-2__leaf-2 {
+    grid-area: leaf2;
+  
+    padding-left: 1rem;
+  
+    -webkit-animation: tilt-in-top-1 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: tilt-in-top-1 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-delay: 5s;
+  }
+  
+  .verse-2__line-5 {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: fit-content;
+  
+    grid-area: line5;
+  
+    white-space: nowrap;
+  
+    transform: $rotation-1;
+  }
+  
+  .verse-2__line-6 {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: fit-content;
+  
+    grid-area: line6;
+  
+    white-space: nowrap;
+  
+    transform: $rotation-1;
+  }
+  
+  .verse-2__line-7 {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: fit-content;
+  
+    grid-area: line7;
+  
+    white-space: nowrap;
+  
+    justify-self: center;
+  }
+  
+  .verse-2__line-1--1 {
+    font-family: $standard-font;
+    font-size: $d-standard-font-size;
+  
+    color: $summer-color-1;
+  }
+  
+  .verse-2__line-1--2 {
+    font-family: $summer-font;
+    font-size: $d-custom-font-size;
+  
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  
+    position: relative;
+    top: 0.2rem;
+  
+    color: $summer-color-2;
+  }
+  
+  .verse-2__line-2--1 {
+    font-family: $summer-font;
+    font-size: $d-custom-font-size;
+  
+    color: $summer-color-1;
+  
+    border: 4px dotted $summer-color-2;
+    border-radius: 60% 5%;
+  
+    padding: 0 2rem 0 2rem;
+  
+    -webkit-animation: tracking-in-expand 1.8s cubic-bezier(0.215, 0.61, 0.355, 1)
+      both;
+    animation: tracking-in-expand 1.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    animation-delay: 2s;
+  }
+  
+  .verse-2__line-3--1 {
+    font-family: $standard-font;
+    font-size: $d-standard-font-size;
+  
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  
+    color: $autumn-color-1;
+  }
+  
+  .verse-2__line-3--2 {
+    font-family: $autumn-font;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+  
+    color: $autumn-color-1;
+  }
+  
+  .verse-2__line-4--1 {
+    font-family: $autumn-font;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+  
+    color: $autumn-color-1;
+  
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation-delay: 5s;
+  }
+  
+  .verse-2__line-4--2 {
+    font-family: $autumn-font;
+    font-size: $d-standard-font-size;
+    letter-spacing: 0.1rem;
+  
+    color: $autumn-color-1;
+  
+    -webkit-animation: fade-in-2 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in-2 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation-delay: 5s;
+  }
+  
+  .verse-2__line-5--1 {
+    font-family: $standard-font;
+    font-size: $d-standard-font-size;
+  
+    color: $winter-color-1;
+  }
+  
+  .verse-2__line-5--2 {
+    font-family: $winter-font;
+    font-size: $d-custom-font-size-2;
+  
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  
+    color: $winter-color-2;
+  }
+  
+  .verse-2__line-6--1 {
+    font-family: $winter-font;
+    font-size: $d-custom-font-size-2;
+    text-shadow: 3px 3px 4px $winter-color-3;
+  
+    border-bottom: 10px solid $winter-color-3;
+  
+    padding: 0 1rem 0 1rem;
+  
+    color: $winter-color-2;
+  
+    -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.61, 0.355, 1)
+      both;
+    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    animation-delay: 8.5s;
+  }
+  
+  .verse-2__continue-button {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+  
+    -webkit-animation: fade-in--button 1.5s cubic-bezier(0.39, 0.575, 0.565, 1)
+      both;
+    animation: fade-in--button 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation-delay: 11s;
+  }
