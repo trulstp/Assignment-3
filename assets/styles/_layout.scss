@@ -578,6 +578,158 @@ left: 96px;
     padding: 1px;
   }
   
+  .verse-3__grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". one one one ."
+        ". . . text-box ."
+        ". two two two ."
+        ". three three . ."
+        ". . text-divide text-divide ."
+        "img-one four four four img-two"
+        ". . . . btn";
+    height: 100vh;
+    font-size: $d-standard-size;
+}
+
+div.verse-3__grid-item-one {
+    grid-area: one;
+    justify-self: center;
+    align-self: end;
+    animation: tilt-in 1s ease forwards;
+
+    span.grid-item-one_content {
+        font-size: $d-large-size;
+        color: darken($skyBlue, 10%);
+        white-space: nowrap;
+    }
+}
+
+div.verse-3__grid-item-one_text {
+    grid-area: text-box;
+    justify-self: start;
+    align-self: center;
+    animation: tilt-in 1s ease forwards;
+    color: darken($skyBlue, 10%);
+    font-family: Satisfy, cursive;
+    opacity: 0;
+    white-space: nowrap;
+}
+
+div.verse-3__grid-item-two {
+    grid-area: two;
+    justify-self: center;
+    animation: slide-in-br 1s ease 4s forwards;
+    opacity: 0;
+    overflow: hidden;
+
+    span.grid-item-two_content {
+        color: darken($silver, 20%);
+        white-space: nowrap;
+
+    }
+
+    span.grid-item-two_content-text {
+        font-family: Satisfy, cursive;
+        font-size: $d-large-size;
+        white-space: nowrap;
+    }
+}
+
+div.verse-3__grid-item-three {
+    grid-area: three;
+    justify-self: right;
+    align-self: flex-end;
+    animation: rotate-fadeIn 0.8s ease 7s forwards;
+    opacity: 0;
+
+    span.grid-item-three_content {
+        color: $appleGreen;
+        white-space: nowrap;
+    }
+}
+
+div.verse-3__grid-item_three_text {
+    grid-area: text-divide;
+    justify-self: center;
+    align-self: center;
+    animation: rotate-fadeIn 0.8s 7s forwards;
+    opacity: 0;
+    white-space: nowrap;
+
+    span.grid-item-three_text-content {
+        font-family: Akaya, cursive;
+        font-size: $d-large-size;
+        color: $red;
+        white-space: nowrap;
+    }
+
+    div.line {
+        height: 5px;
+        width: 100%;
+        background-color: $red;
+    }
+}
+
+div.verse-3__grid-item-img_1 {
+    grid-area: img-one;
+    width: 100px;
+    justify-self: end;
+    align-self: center;
+    animation: slide-in-bottom 1s 10s forwards, shake-vertical 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) 11s infinite;
+    opacity: 0;
+    overflow: hidden;
+}
+
+div.verse-3__grid-item-four {
+    grid-area: four;
+    justify-self: center;
+    align-self: center;
+    animation: slide-in-bottom 1s 10s forwards;
+    opacity: 0;
+    overflow: hidden;
+
+    span.grid-item-four_content {
+        white-space: nowrap;
+        span.grid-item-four_content-text {
+            font-family: Kalam, cursive;
+        }
+    }
+
+}
+
+div.verse-3__grid-item-img_2 {
+    grid-area: img-two;
+    width: 100px;
+    justify-self: start;
+    align-self: center;
+    animation: slide-in-bottom 1s 10s forwards, shake-vertical 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) 11.3s infinite;
+    opacity: 0;
+    overflow: hidden;
+}
+
+div.verse-3__grid-item_button {
+    grid-area: btn;
+    justify-self: center;
+    align-self: center;
+    animation: fadeIn 0.6s ease 13s forwards;
+    opacity: 0;
+    button {
+        padding: 15px 25px;
+        border-radius: 20px 20px;
+    
+        color: white;
+        background-color: $buttonColor;
+    
+        &:hover {
+            background-color: lighten($buttonColor, 10%);
+            cursor: pointer;
+                }
+    }
+}
+
   .verse-5-first {
    white-space: nowrap;
   }

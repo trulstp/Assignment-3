@@ -41,21 +41,47 @@ $m-custom-font-size-2: 2rem;
     font-family: Summer;
     src: url(../fonts/beach.otf);
     font-display: swap;
-  }
+}
   
-  @font-face {
+@font-face {
     font-family: Autumn;
     src: url(../fonts/autumn.ttf);
     font-display: swap;
-  }
+}
   
-  @font-face {
+@font-face {
     font-family: Winter;
     src: url(../fonts/akaya.ttf);
     font-display: swap;
-  }
+}
 
-  $rotation-1: rotate(-10deg);
-  $rotation-2: rotate(10deg);
+$rotation-1: rotate(-10deg);
+$rotation-2: rotate(10deg);
 
-  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+//Verse 3
+//Desktop
+$d-small-size: 1.5rem;
+$d-standard-size: 2rem;
+$d-large-size: 2.5rem;
+
+//Mobile
+$m-small-size: 0.8rem;
+$m-standard-size: 1.3rem;
+$m-large-size: 1.7rem;
+
+@font-face {
+    font-family: Satisfy;
+    src: url(../fonts/Satisfy-Regular.ttf);
+}
+
+@font-face {
+    font-family: Kalam;
+    src: url(../fonts/Kalam-Regular.ttf);
+}
+
+@font-face {
+    font-family: Akaya;
+    src: url(../fonts/AkayaKanadaka-Regular.ttf);
+}  
+//--------------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');

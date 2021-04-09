@@ -1,3 +1,27 @@
+//If screen width is 900px or smaller - Tablet/mobile
+@media (max-width: 900px) {
+  .verse-3__grid-container {
+      font-size: $m-standard-size;
+  }
+
+  div.verse-3__grid-item-one {
+      span.grid-item-one_content {
+          font-size: $m-large-size;
+      }
+  }
+
+  div.verse-3__grid-item-two {
+      span.grid-item-two_content-text {
+          font-size: $m-large-size;
+      }
+  }
+
+  div.verse-3__grid-item_three_text {
+      span.grid-item-three_text-content {
+          font-size: $m-large-size;
+      }
+  }
+}
 /* If screen width is 600px or smaller - Mobile */
 @media (max-width: 600px) {
     html {
