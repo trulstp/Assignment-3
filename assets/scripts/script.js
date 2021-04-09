@@ -227,8 +227,7 @@ function verse3() {
 
     list[3].classList.add("menu__menuItem--active"); // Adds the active class to the clicked menu item
 
-    content.innerHTML = `
-    <div class="verse-3__grid-container">
+    content.innerHTML = `<div class="verse-3__grid-container">
         <div class="verse-3__grid-item-one">
             <span class="grid-item-one_content">I know the sky is blue</span>
         </div>
@@ -266,8 +265,7 @@ function verse3() {
         <div class="verse-3__grid-item_button">
             <button onclick="verse4()">Continue</button>
         </div>
-    </div>
-    `;
+    </div>`;
 }
 
 function verse4() {
