@@ -116,7 +116,7 @@ function playVerse1() {
         </figure>
     </div>
     <svg class="verse1_svg" viewbox="0 0 490 150">
-        <path id="curve" fill="transparent"
+        <path id="curve" fill="transparent" 
         d="M125.4,50.3c69.1,66.7,180.9,66.7,240,0"/>
         <text width="500">
             <textPath xlink:href="#curve">
@@ -127,8 +127,8 @@ function playVerse1() {
     <p class="verse1_line4">
         "What <span class="verse1_span_colour">colour</span> is a tree?"
     </p>
-</div>`;
-}
+    </div>`
+    }
 
 function verse2() {
     let content = document.getElementsByClassName("flex-container")[0]; // Reference to div for displaying content

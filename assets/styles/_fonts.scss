@@ -1,22 +1,27 @@
 // Font families and font sizes
 // Verse1 fonts
-textPath {
-    font-size: large;
-}
+$font-weights: (
+    "thin": 400,
+    "medium": 500,
+    "bold": 700
+);
+
 .verse1_line1 {
-    font-weight: 700;
+    font-weight: map-get($font-weights, thin);
 }   
 .verse1_line2 {
+    font-weight: map-get($font-weights, medium);
     font-family: fantasy, Georgia, sans-serif;
     opacity: 0;
 }
 .verse1_svg {
     opacity: 0;
     text-decoration: underline;
+    font-weight: map-get($font-weights, medium);
 }
 .verse1_line4 {
     opacity: 0;
-    font-weight: 700;
+    font-weight: map-get($font-weights, bold);
 }
 
 //Verse 2
