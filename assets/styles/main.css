@@ -1984,6 +1984,84 @@ div.verse-3__grid-item_button button:hover {
   }
 }
 
+@keyframes verse4_opasity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes verse4_opasity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#verse4_sentence1 {
+  font-family: Winter, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  -webkit-animation: verse4_opasity 3s;
+          animation: verse4_opasity 3s;
+}
+
+#verse4_sentence2 {
+  font-family: Kalam, Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  -webkit-animation: verse4_opasity 3s;
+          animation: verse4_opasity 3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#verse4_sentence3 {
+  font-family: Autumn, Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  -webkit-animation: verse4_opasity 3s;
+          animation: verse4_opasity 3s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#verse4_sentence3 #verse4_sentence3-line2 {
+  font-size: 40px;
+}
+
+#verse4_sentence3 #verse4_sentence3-line3 {
+  font-size: 20px;
+}
+
+#verse4_sentence3 #verse4_sentence3-line4 {
+  font-size: 23px;
+}
+
+#verse4_sentence3 #verse4_sentence3-line5 {
+  font-size: 18px;
+}
+
+#verse4_sentence4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  -webkit-animation: verse4_opasity 3s;
+          animation: verse4_opasity 3s;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#verse4_sentence4 #verse4_sentence4-right {
+  font-size: 22px;
+}
+
 @-webkit-keyframes colorRotate {
   from {
     color: #6666ff;

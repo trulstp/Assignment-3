@@ -290,7 +290,70 @@ function verse4() {
 
     list[4].classList.add("menu__menuItem--active"); // Adds the active class to the clicked menu item
 
-    content.innerHTML = `Verse 4`;
+    content.innerHTML = `
+    <svg width="75vw" height="95vh" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+        <!--Head-->
+        <circle class="head" cx="250" cy="66" r="50" fill="#e6e6e6"/>
+        <!--Text head-->
+        <path id="headPath" d="M200,66a50,50 0 1,0 100,0a50,50 0 1,0 -100,0"/>
+        <text id="verse4_sentence1">
+            <textPath href="#headPath">Man is many colours child: </textPath>
+        </text>
+    
+        <!--Left arm-->
+        <rect x="150" y="122" width="35" height="190" rx="17.5" fill="#e6e6e6"/>
+        <!--Shoulder-->
+        <rect x="163" y="122" width="22" height="23" rx="5" fill="#e6e6e6"/>
+    
+        <!--Right arm-->
+        <rect x="315" y="122" width="35" height="190" rx="17.5" fill="#e6e6e6"/>
+        <!--Shoulder-->
+        <rect x="315" y="122" width="22" height="23" rx="5" fill="#e6e6e6"/>
+        
+        <!--Arm text-->
+        <text id="verse4_sentence2" transform="translate(175,306) rotate(-90)" opacity="0">Some are yellow,
+            <tspan id="verse4_sentence2-right" x="0" y="165"> some are brown.</tspan>
+        </text>
+
+        <!--Body-->
+        <rect x="190" y="122" width="120" height="190" rx="5" fill="#e6e6e6"/>
+        <text id="verse4_sentence3" x="212" y="178" opacity="0">And 
+            <tspan id="verse4_sentence3-line2" x="206" y="220">some </tspan>
+            <tspan id="verse4_sentence3-line3" x="211" y="247">are black </tspan>
+            <tspan id="verse4_sentence3-line4" x="238" y="273">as </tspan>
+            <tspan id="verse4_sentence3-line5" x="198" y="295">sightlessness, </tspan>
+        </text>
+
+        <!--Left leg-->
+        <rect x="195" y="316" width="50" height="150" rx="5" fill="#e6e6e6"/>
+    
+        <!--Right leg-->
+        <rect x="255" y="316" width="50" height="150" rx="5" fill="#e6e6e6"/>
+
+        <!--Leg text-->
+        <text id="verse4_sentence4" transform="translate(228,460) rotate(-90)" opacity="0">Some white
+            <tspan id="verse4_sentence4-right" x="0" y="58"> as eiderdown.</tspan>
+        </text>
+    </svg>
+    `;
+
+    //set the initial colors
+    setColor("verse4_sentence1");
+    setColor("verse4_sentence2");
+    setColor("verse4_sentence3");
+    setColor("verse4_sentence4");
+
+    setInterval(function(){
+        setColor("verse4_sentence1");
+        setColor("verse4_sentence2");
+        setColor("verse4_sentence3");
+        setColor("verse4_sentence4");
+    },1500); //1500ms = 1.5s
+
+    function setColor(evt){
+        document.getElementById(evt).style.fill = "RGB(" + Math.floor(Math.random()*191) + "," + Math.floor(Math.random()*191) + "," + Math.floor(Math.random()*191) + ")";
+    }
 }
 
 function verse5() {
