@@ -145,138 +145,125 @@ a:active {
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
-    opacity: 0.88;
+    opacity: 0.8;
     font-size: 1em;
     width: 500px;
     height: 500px;
-    border: 1px solid black;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     background-color: $alternate-color;
     z-index: 1;
+    animation-name: box_color;
+    animation-delay: 5s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
             }
-.verse1_line1 {
-margin-top: 60px;
-margin-left:70px;
-padding-bottom: 30px; 
-}
-.verse1_line2{
-    position:relative;
-    left: 10px;
-}
-.verse1_smiley1 .verse1_smiley2 {
-    border: 4px solid black;
-}
-.verse1_svg {
-    position: relative;
-      bottom: 30px;
-}
-.verse1_line4 {
-position: relative;
-bottom: 40px;
-width: 200px;
-height: 50px;
-padding: 15px 0px 0px 10px;
-background: $primary-color;
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 10px;
-color: $alternate-color
-}
 
-.verse1_line4:after
-{
-content: '';
-position: absolute;
-border-style: solid;
-border-width: 0 15px 40px;
-border-color: $primary-color transparent;
-display: block;
-width: 0;
-z-index: 1;
-top: -40px;
-left: 96px;
-}
-
-.verse1_line1 {
+          .verse1_line1 {
+  margin-top: 60px;
+  margin-left:70px;
+  padding-bottom: 30px; 
   grid-column: 3 / 6;
   grid-row-start: 1;
   grid-row-end: 1;
   animation-name: line1;
-  animation-duration: 15s;
+  animation-duration: 10s;
   animation-fill-mode: forwards;
   }
  
-  .verse1_line2 {
-    margin-left: 50px;
-    grid-column: 3 / 6;
+.verse1_line2 {
+  position:relative;
+  left: 10px;
+  margin-left: 50px;
+  grid-column: 3 / 6;
   grid-row-start: 2;
   grid-row-end: 2;
   animation-name: line2;
   animation-delay: 6s;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-fill-mode: forwards;
   }
-  .verse1_smiley1 {
-    opacity: 0;
-    grid-column-start: 4;
+
+.verse1_smiley1 {
+  opacity: 0;
+  grid-column-start: 4;
   grid-column-end:  4;
   grid-row-start: 3;
   grid-row-end: 3;
   animation-name: smiley1;
   animation-duration: 1.5s;
-  animation-delay: 15s;
+  animation-delay: 10s;
   animation-fill-mode: forwards;
   }
-  .verse1_smiley2{
-    opacity: 0;
-    grid-column-start: 5;
+
+.verse1_smiley2{
+  opacity: 0;
+  grid-column-start: 5;
   grid-column-end:  5;
   grid-row-start: 3;
   grid-row-end: 3;
   animation-name: smiley2;
   animation-duration: 1.5s;
-  animation-delay: 15s;
+  animation-delay: 10s;
   animation-fill-mode: forwards;
   }
-  .verse1_svg {
-    
-    grid-column-start: 1;
+
+.verse1_svg {
+  position:relative;
+  left: 20px;
+  grid-column-start: 1;
   grid-column-end: span 8;
   grid-row-start: 4;
   grid-row-end: 5;
   animation-name: line3;
   animation-duration: 2s;
-  animation-delay: 15s;
+  animation-delay: 11s;
   animation-fill-mode: forwards;
   }
  
-  .verse1_line4 {
-    grid-column-start: 4;
+.verse1_line4 {
+  position: relative;
+  bottom: 10px;
+  width: 200px;
+  height: 50px;
+  padding: 15px 0px 0px 10px;
+  background: $primary-color;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: $alternate-color;
+  grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 6;
   grid-row-end: 6;
   animation-name: line4;
   animation-duration: 10s;
-  animation-delay: 19s;
+  animation-delay: 14s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-      }
+    }
+
+.verse1_line4:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 0 15px 40px;
+  border-color: $primary-color transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: -40px;
+  left: 96px;
+    }
  
-  .verse1_layout_box {
-      animation-name: box_color;
-      animation-delay: 6s;
-      animation-duration: 10s;
-      animation-fill-mode: forwards;
-  }
- 
-  .verse1_span_colour {
-      animation-name: span_tree;
-      animation-duration: 10s;
-      animation-delay: 14s;
-      animation-iteration-count: infinite;
-      animation-fill-mode: both;
-      animation-direction: alternate;
+.verse1_span_colour {
+    animation-name: span_tree;
+    animation-duration: 10s;
+    animation-delay: 14s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
   }
 
 .verse-2__grid-container {
