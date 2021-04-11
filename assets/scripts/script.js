@@ -337,7 +337,7 @@ function verse4() {
         <tspan id="verse4_sentence4-right" x="0" y="58"> as eiderdown.</tspan>
     </text>
 </svg>
-`;
+<a class="verse-4__continue-button" href="#" onclick="verse4()">Next</a>`;
 
     //set the initial colors
     setColor("verse4_sentence1");
@@ -408,5 +408,6 @@ function verse5() {
 </svg>
 </span>
    
-</div>`;
+</div>
+<a class="verse-5__continue-button" href="#" onclick="playVerse1()">Play again?</a>`;
 }

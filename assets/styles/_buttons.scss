@@ -52,5 +52,10 @@ $button-opacity: 50%;
 
 .verse-4__continue-button {
     @include continue-button;
-    animation-delay: 11s;
+    animation-delay: 9s;
+}
+
+.verse-5__continue-button {
+    @include continue-button;
+    animation-delay: 16s;
 }
