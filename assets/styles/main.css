@@ -9,27 +9,6 @@ body {
   padding: 0;
 }
 
-.verse1_line1 {
-  font-weight: 400;
-}
-
-.verse1_line2 {
-  font-weight: 500;
-  font-family: fantasy, Georgia, sans-serif;
-  opacity: 0;
-}
-
-.verse1_svg {
-  opacity: 0;
-  text-decoration: underline;
-  font-weight: 500;
-}
-
-.verse1_line4 {
-  opacity: 0;
-  font-weight: 700;
-}
-
 @font-face {
   font-family: Summer;
   src: url(../fonts/beach.otf);
@@ -81,7 +60,7 @@ html {
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
-      grid-template-areas: "header main" "nav main" "footer main";
+      grid-template-areas: "header main" "nav main" "footer main";
 }
 
 .flex-container {
@@ -261,6 +240,7 @@ a:active {
 }
 
 .verse1_line1 {
+  font-weight: 400;
   margin-top: 60px;
   margin-left: 70px;
   padding-bottom: 30px;
@@ -279,6 +259,9 @@ a:active {
 }
 
 .verse1_line2 {
+  opacity: 0;
+  font-weight: 500;
+  font-family: fantasy, Georgia, sans-serif;
   position: relative;
   left: 10px;
   margin-left: 50px;
@@ -335,6 +318,9 @@ a:active {
 }
 
 .verse1_svg {
+  opacity: 0;
+  text-decoration: underline;
+  font-weight: 500;
   position: relative;
   left: 20px;
   -ms-grid-column: 1;
@@ -355,6 +341,8 @@ a:active {
 }
 
 .verse1_line4 {
+  opacity: 0;
+  font-weight: 700;
   position: relative;
   bottom: 10px;
   width: 200px;
@@ -426,7 +414,7 @@ a:active {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      grid-template-areas: "line1 line1 ." ". line2 line2";
+      grid-template-areas: "line1 line1 ." ". line2 line2";
   -webkit-animation: tilt-in-fwd-tl 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: tilt-in-fwd-tl 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 0.5s;
@@ -448,7 +436,7 @@ a:active {
       grid-template-columns: auto 1fr 1fr auto;
   -ms-grid-rows: auto 1fr 1fr auto;
       grid-template-rows: auto 1fr 1fr auto;
-      grid-template-areas: ". . . ." "leaf1 line3 . ." "leaf1 line4 line4 leaf2" ". . . .";
+      grid-template-areas: ". . . ." "leaf1 line3 . ." "leaf1 line4 line4 leaf2" ". . . .";
   -webkit-animation: tilt-in-fwd-tr 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: tilt-in-fwd-tr 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 3.5s;
@@ -468,7 +456,7 @@ a:active {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "line5 line5 . . ." ". line6 line6 . ." ". . . . ." "line7 line7 line7 line7 line7";
+      grid-template-areas: "line5 line5 . . ." ". line6 line6 . ." ". . . . ." "line7 line7 line7 line7 line7";
   -webkit-animation: slide-in-elliptic-top-fwd 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-elliptic-top-fwd 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 7s;
@@ -721,7 +709,7 @@ a:active {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-      grid-template-areas: ". one one one ." ". . . text-box ." ". two two two ." ". three three . ." ". . text-divide text-divide ." "img-one four four four img-two" ". . . . btn";
+      grid-template-areas: ". one one one ." ". . . text-box ." ". two two two ." ". three three . ." ". . text-divide text-divide ." "img-one four four four img-two" ". . . . btn";
   height: 100vh;
   font-size: 2rem;
 }
@@ -1061,7 +1049,7 @@ div.verse-3__grid-item_button button:hover {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto 1.8fr;
         grid-template-rows: auto 1.8fr;
-        grid-template-areas: "header" "main";
+        grid-template-areas: "header" "main";
     overflow: hidden;
   }
   .flex-container {
@@ -1163,7 +1151,7 @@ div.verse-3__grid-item_button button:hover {
   .verse-2__grid-container--3 {
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: ". line5 line5 . . ." ". . line6 line6 . ." ". . . . . ." ". line7 line7 line7 line7 .";
+        grid-template-areas: ". line5 line5 . . ." ". . line6 line6 . ." ". . . . . ." ". line7 line7 line7 line7 .";
   }
   .verse-2__line-1--1 {
     font-size: 1.5rem;
@@ -1997,6 +1985,84 @@ div.verse-3__grid-item_button button:hover {
             transform: translateY(0);
     opacity: 1;
   }
+}
+
+@keyframes verse4_opasity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes verse4_opasity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#verse4_sentence1 {
+  font-family: Winter, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  -webkit-animation: verse4_opasity 3s;
+          animation: verse4_opasity 3s;
+}
+
+#verse4_sentence2 {
+  font-family: Kalam, Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  -webkit-animation: verse4_opasity 3s;
+          animation: verse4_opasity 3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#verse4_sentence3 {
+  font-family: Autumn, Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  -webkit-animation: verse4_opasity 3s;
+          animation: verse4_opasity 3s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#verse4_sentence3 #verse4_sentence3-line2 {
+  font-size: 40px;
+}
+
+#verse4_sentence3 #verse4_sentence3-line3 {
+  font-size: 20px;
+}
+
+#verse4_sentence3 #verse4_sentence3-line4 {
+  font-size: 23px;
+}
+
+#verse4_sentence3 #verse4_sentence3-line5 {
+  font-size: 18px;
+}
+
+#verse4_sentence4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  -webkit-animation: verse4_opasity 3s;
+          animation: verse4_opasity 3s;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#verse4_sentence4 #verse4_sentence4-right {
+  font-size: 22px;
 }
 
 @-webkit-keyframes colorRotate {

@@ -1,0 +1,65 @@
+@keyframes verse4_opasity{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-webkit-keyframes verse4_opasity{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+$verse4_opacity-animation: verse4_opasity 3s;
+
+#verse4_sentence1{
+    font-family: $winter-font;
+    font-size: 24px;
+
+    animation: $verse4_opacity-animation;
+}
+
+#verse4_sentence2{
+    font-family: Kalam, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+
+    animation: $verse4_opacity-animation;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#verse4_sentence3{
+    font-family: $autumn-font;
+    font-size: 50px;
+
+    animation: $verse4_opacity-animation;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+
+    #verse4_sentence3-line2{
+        font-size: 40px;
+    }
+    
+    #verse4_sentence3-line3{
+        font-size: 20px;
+    }
+    
+    #verse4_sentence3-line4{
+        font-size: 23px;
+    }
+    
+    #verse4_sentence3-line5{
+        font-size: 18px;
+    }
+}
+
+#verse4_sentence4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+
+    animation: $verse4_opacity-animation;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+
+    #verse4_sentence4-right{
+        font-size: 22px;
+    }
+}
