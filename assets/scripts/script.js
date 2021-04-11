@@ -269,7 +269,10 @@ function verse3() {
     <a class="verse-3__continue-button" href="#" onclick="verse4()">Next</a>`;
 }
 
+var verse4timeout = "inactive";
+var verse4interval;
 function verse4() {
+
     let content = document.getElementsByClassName("flex-container")[0]; // Reference to div for displaying content
     
     let active = document.getElementsByClassName("menu__menuItem--active"); // Reference to the active menu element
@@ -344,16 +347,24 @@ function verse4() {
     setColor("verse4_sentence2");
     setColor("verse4_sentence3");
     setColor("verse4_sentence4");
-    
-    setTimeout(function(){
 
-    setInterval(function(){
-        setColor("verse4_sentence1");
-        setColor("verse4_sentence2");
-        setColor("verse4_sentence3");
-        setColor("verse4_sentence4");
-    },1500); //1500ms = 1.5s
-    },11000)
+    if(verse4timeout != "inactive"){clearTimeout(verse4timeout); clearInterval(verse4interval); interval();}
+    
+    else{
+        interval();
+    }
+
+    function interval(){
+        verse4timeout = setTimeout(function(){
+
+            verse4interval = setInterval(function(){
+                setColor("verse4_sentence1");
+                setColor("verse4_sentence2");
+                setColor("verse4_sentence3");
+                setColor("verse4_sentence4");
+            },1500); //1500ms = 1.5s
+        },11000)
+    }
 
     function setColor(evt){
         document.getElementById(evt).style.fill = "RGB(" + Math.floor(Math.random()*191) + "," + Math.floor(Math.random()*191) + "," + Math.floor(Math.random()*191) + ")";
