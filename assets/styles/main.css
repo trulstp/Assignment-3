@@ -705,16 +705,6 @@ a:active {
           animation-delay: 8.5s;
 }
 
-.verse-2__continue-button {
-  position: fixed;
-  bottom: 2%;
-  right: 2%;
-  -webkit-animation: fade-in--button 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in--button 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  -webkit-animation-delay: 11s;
-          animation-delay: 11s;
-}
-
 .rainbow-verse5 {
   text-align: center;
   font-size: 20px;
@@ -1006,6 +996,62 @@ div.verse-3__grid-item_button button:hover {
 
 .start-button:hover {
   opacity: 50%;
+}
+
+.verse-1__continue-button {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  padding: 15px 25px;
+  border-radius: 20px 20px;
+  color: white;
+  background-color: #393c7f;
+  -webkit-animation: fade-in--button 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in--button 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+.verse-2__continue-button {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  padding: 15px 25px;
+  border-radius: 20px 20px;
+  color: white;
+  background-color: #393c7f;
+  -webkit-animation: fade-in--button 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in--button 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+
+.verse-3__continue-button {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  padding: 15px 25px;
+  border-radius: 20px 20px;
+  color: white;
+  background-color: #393c7f;
+  -webkit-animation: fade-in--button 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in--button 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+.verse-4__continue-button {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  padding: 15px 25px;
+  border-radius: 20px 20px;
+  color: white;
+  background-color: #393c7f;
+  -webkit-animation: fade-in--button 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in--button 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
 }
 
 @media (max-width: 900px) {

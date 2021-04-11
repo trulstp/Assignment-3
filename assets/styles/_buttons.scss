@@ -1,5 +1,20 @@
 $button-opacity: 50%;
 
+@mixin continue-button {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+
+    padding: 15px 25px;
+    border-radius: 20px 20px;
+
+    color: white;
+    background-color: rgb(57, 60, 127);
+
+    -webkit-animation: fade-in--button 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in--button 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
 .info-button {
     color: white;
 
@@ -7,7 +22,6 @@ $button-opacity: 50%;
         opacity: $button-opacity;
     }
 }
-
 
 .start-button {
     padding: 15px 25px;
@@ -19,4 +33,24 @@ $button-opacity: 50%;
     &:hover {
         opacity: $button-opacity;
     }
+}
+
+.verse-1__continue-button {
+    @include continue-button;
+    animation-delay: 15s;
+}
+
+.verse-2__continue-button {
+    @include continue-button;
+    animation-delay: 11s;
+}
+
+.verse-3__continue-button {
+    @include continue-button;
+    animation-delay: 12s;
+}
+
+.verse-4__continue-button {
+    @include continue-button;
+    animation-delay: 11s;
 }

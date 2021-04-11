@@ -127,7 +127,8 @@ function playVerse1() {
     <p class="verse1_line4">
         "What <span class="verse1_span_colour">colour</span> is a tree?"
     </p>
-    </div>`
+    </div>
+    <a class="verse-1__continue-button" href="#" onclick="verse2()">Next</a>`
     }
 
 function verse2() {
@@ -202,7 +203,8 @@ function verse2() {
             <span class="verse-2__line-5--1">when all their leaves are shed...</span>
           </div>
 
-    </div>`;
+    </div>
+    <a class="verse-2__continue-button" href="#" onclick="verse3()">Next</a>`;
 }
 
 function verse3() {
@@ -262,10 +264,8 @@ function verse3() {
                     fill-rule="evenodd" stroke="#A0522D" fill="#A0522D" />
             </svg>
         </div>
-        <div class="verse-3__grid-item_button">
-            <button onclick="verse4()">Continue</button>
-        </div>
-    </div>`;
+    </div>
+    <a class="verse-3__continue-button" href="#" onclick="verse4()">Next</a>`;
 }
 
 function verse4() {
