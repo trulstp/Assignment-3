@@ -81,7 +81,7 @@ html {
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
-      grid-template-areas: "header main" "nav main" "footer main";
+      grid-template-areas: "header main" "nav main" "footer main";
 }
 
 .flex-container {
@@ -426,7 +426,7 @@ a:active {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      grid-template-areas: "line1 line1 ." ". line2 line2";
+      grid-template-areas: "line1 line1 ." ". line2 line2";
   -webkit-animation: tilt-in-fwd-tl 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: tilt-in-fwd-tl 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 0.5s;
@@ -448,7 +448,7 @@ a:active {
       grid-template-columns: auto 1fr 1fr auto;
   -ms-grid-rows: auto 1fr 1fr auto;
       grid-template-rows: auto 1fr 1fr auto;
-      grid-template-areas: ". . . ." "leaf1 line3 . ." "leaf1 line4 line4 leaf2" ". . . .";
+      grid-template-areas: ". . . ." "leaf1 line3 . ." "leaf1 line4 line4 leaf2" ". . . .";
   -webkit-animation: tilt-in-fwd-tr 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: tilt-in-fwd-tr 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 3.5s;
@@ -468,7 +468,7 @@ a:active {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "line5 line5 . . ." ". line6 line6 . ." ". . . . ." "line7 line7 line7 line7 line7";
+      grid-template-areas: "line5 line5 . . ." ". line6 line6 . ." ". . . . ." "line7 line7 line7 line7 line7";
   -webkit-animation: slide-in-elliptic-top-fwd 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-elliptic-top-fwd 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 7s;
@@ -721,7 +721,7 @@ a:active {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-      grid-template-areas: ". one one one ." ". . . text-box ." ". two two two ." ". three three . ." ". . text-divide text-divide ." "img-one four four four img-two" ". . . . btn";
+      grid-template-areas: ". one one one ." ". . . text-box ." ". two two two ." ". three three . ." ". . text-divide text-divide ." "img-one four four four img-two" ". . . . btn";
   height: 100vh;
   font-size: 2rem;
 }
@@ -1083,7 +1083,7 @@ div.verse-3__grid-item_button button:hover {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto 1.8fr;
         grid-template-rows: auto 1.8fr;
-        grid-template-areas: "header" "main";
+        grid-template-areas: "header" "main";
     overflow: hidden;
   }
   .flex-container {
@@ -1154,7 +1154,7 @@ div.verse-3__grid-item_button button:hover {
   .verse-2__grid-container--3 {
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: ". line5 line5 . . ." ". . line6 line6 . ." ". . . . . ." ". line7 line7 line7 line7 .";
+        grid-template-areas: ". line5 line5 . . ." ". . line6 line6 . ." ". . . . . ." ". line7 line7 line7 line7 .";
   }
   .verse-2__line-1--1 {
     font-size: 1.5rem;
@@ -1318,11 +1318,9 @@ div.verse-3__grid-item_button button:hover {
   }
   50% {
     background: #000000;
-    border: 1px solid #FFFFFF;
   }
   100% {
     background: #FFFFFF;
-    border: 1px solid #000000;
   }
 }
 
@@ -1332,11 +1330,9 @@ div.verse-3__grid-item_button button:hover {
   }
   50% {
     background: #000000;
-    border: 1px solid #FFFFFF;
   }
   100% {
     background: #FFFFFF;
-    border: 1px solid #000000;
   }
 }
 

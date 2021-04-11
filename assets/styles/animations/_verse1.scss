@@ -51,10 +51,8 @@
     @keyframes box_color {
        0%{background: $alternate-color;}
        50%{background: $primary-color;
-           border: 1px solid $alternate-color;
     }
        100% {background: $alternate-color;
-             border: 1px solid $primary-color;   
     }
     }
     /* ----------------------------------------------
