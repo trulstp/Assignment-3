@@ -495,8 +495,8 @@ a:active {
   
     color: $autumn-color-1;
   
-    -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    -webkit-animation: fade-in-1 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in-1 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation-delay: 5s;
   }
   
