@@ -160,6 +160,7 @@ a:active {
             }
 
           .verse1_line1 {
+  font-weight: map-get($font-weights, thin);
   margin-top: 60px;
   margin-left:70px;
   padding-bottom: 30px; 
@@ -172,6 +173,9 @@ a:active {
   }
  
 .verse1_line2 {
+  opacity: 0;
+  font-weight: map-get($font-weights, medium);
+  font-family: fantasy, Georgia, sans-serif;
   position:relative;
   left: 10px;
   margin-left: 50px;
@@ -209,6 +213,9 @@ a:active {
   }
 
 .verse1_svg {
+  opacity: 0;
+  text-decoration: underline;
+  font-weight: map-get($font-weights, medium);
   position:relative;
   left: 20px;
   grid-column-start: 1;
@@ -222,6 +229,8 @@ a:active {
   }
  
 .verse1_line4 {
+  opacity: 0;
+  font-weight: map-get($font-weights, bold);
   position: relative;
   bottom: 10px;
   width: 200px;

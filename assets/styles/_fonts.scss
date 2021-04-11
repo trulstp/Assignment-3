@@ -6,24 +6,6 @@ $font-weights: (
     "bold": 700
 );
 
-.verse1_line1 {
-    font-weight: map-get($font-weights, thin);
-}   
-.verse1_line2 {
-    font-weight: map-get($font-weights, medium);
-    font-family: fantasy, Georgia, sans-serif;
-    opacity: 0;
-}
-.verse1_svg {
-    opacity: 0;
-    text-decoration: underline;
-    font-weight: map-get($font-weights, medium);
-}
-.verse1_line4 {
-    opacity: 0;
-    font-weight: map-get($font-weights, bold);
-}
-
 //Verse 2
 // Font faces
 $standard-font: Arial, Helvetica, sans-serif;
