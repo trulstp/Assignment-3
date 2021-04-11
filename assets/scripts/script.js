@@ -345,12 +345,18 @@ function verse4() {
     setColor("verse4_sentence3");
     setColor("verse4_sentence4");
 
-    setInterval(function(){
-        setColor("verse4_sentence1");
-        setColor("verse4_sentence2");
-        setColor("verse4_sentence3");
-        setColor("verse4_sentence4");
-    },1500); //1500ms = 1.5s
+
+    setTimeout(function(){
+
+        setInterval(function(){
+            setColor("verse4_sentence1");
+            setColor("verse4_sentence2");
+            setColor("verse4_sentence3");
+            setColor("verse4_sentence4");
+        },1500); //1500ms = 1.5s
+
+    },11000)
+
 
     function setColor(evt){
         document.getElementById(evt).style.fill = "RGB(" + Math.floor(Math.random()*191) + "," + Math.floor(Math.random()*191) + "," + Math.floor(Math.random()*191) + ")";
