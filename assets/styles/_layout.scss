@@ -271,7 +271,7 @@ a:active {
     width: fit-content;
     height: fit-content;
   
-    transform: $rotation-1;
+    transform: rotate(-10deg);
   
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -291,7 +291,7 @@ a:active {
     width: fit-content;
     height: fit-content;
   
-    transform: $rotation-2;
+    transform: rotate(10deg);
   
     display: grid;
     grid-template-columns: auto 1fr 1fr auto;
@@ -406,7 +406,7 @@ a:active {
   
     white-space: nowrap;
   
-    transform: $rotation-1;
+    transform: rotate(-10deg);
   }
   
   .verse-2__line-6 {
@@ -418,7 +418,7 @@ a:active {
   
     white-space: nowrap;
   
-    transform: $rotation-1;
+    transform: rotate(-10deg);
   }
   
   .verse-2__line-7 {
