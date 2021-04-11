@@ -337,26 +337,23 @@ function verse4() {
         <tspan id="verse4_sentence4-right" x="0" y="58"> as eiderdown.</tspan>
     </text>
 </svg>
-<a class="verse-4__continue-button" href="#" onclick="verse4()">Next</a>`;
+<a class="verse-4__continue-button" href="#" onclick="verse5()">Next</a>`;
 
     //set the initial colors
     setColor("verse4_sentence1");
     setColor("verse4_sentence2");
     setColor("verse4_sentence3");
     setColor("verse4_sentence4");
-
-
+    
     setTimeout(function(){
 
-        setInterval(function(){
-            setColor("verse4_sentence1");
-            setColor("verse4_sentence2");
-            setColor("verse4_sentence3");
-            setColor("verse4_sentence4");
-        },1500); //1500ms = 1.5s
-
+    setInterval(function(){
+        setColor("verse4_sentence1");
+        setColor("verse4_sentence2");
+        setColor("verse4_sentence3");
+        setColor("verse4_sentence4");
+    },1500); //1500ms = 1.5s
     },11000)
-
 
     function setColor(evt){
         document.getElementById(evt).style.fill = "RGB(" + Math.floor(Math.random()*191) + "," + Math.floor(Math.random()*191) + "," + Math.floor(Math.random()*191) + ")";
