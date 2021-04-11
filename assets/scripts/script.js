@@ -8,10 +8,11 @@ window.addEventListener('resize', () => {
 
 // Function for showing/hiding the menu on mobile
 function toggleMenu(x) {
-    const mediaQuery = window.matchMedia('(max-width: 600px)');
+    const mediaQueryM = window.matchMedia('(max-width: 600px)');
+    const mediaQueryT = window.matchMedia('(max-width: 1100px)');
 
     // If the screen is mobile, toggle the menu
-    if (mediaQuery.matches) {
+    if (mediaQueryM.matches || mediaQueryT.matches) {
     let navigation = document.querySelector("nav");
     let hiddenItem = document.querySelector(".menu__menuItem--hidden");
 
