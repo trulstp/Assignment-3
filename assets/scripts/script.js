@@ -129,10 +129,18 @@ function playVerse1() {
         "What <span class="verse1_span_colour">colour</span> is a tree?"
     </p>
     </div>
-    <a class="verse-1__continue-button" href="#" onclick="verse2()">Next</a>`
+    <a class="verse-1__continue-button" href="#" onclick="playVerse2()">Next</a>`
     }
 
 function verse2() {
+    // Toggles the menu
+    toggleMenu();
+    
+    // Displays and plays verse 2
+    playVerse2();
+}
+
+function playVerse2() {
     let content = document.getElementsByClassName("flex-container")[0]; // Reference to div for displaying content
     
     let active = document.getElementsByClassName("menu__menuItem--active"); // Reference to the active menu element
@@ -144,11 +152,7 @@ function verse2() {
     if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
 
         background.style.backgroundImage = "url('assets/images/gray-background.jpg')";  // The background of the home page
-
     }
-
-    // Toggles the menu
-    toggleMenu();
 
     active[0].classList.remove("menu__menuItem--active"); // Removes the current active class item
 
@@ -205,10 +209,18 @@ function verse2() {
           </div>
 
     </div>
-    <a class="verse-2__continue-button" href="#" onclick="verse3()">Next</a>`;
+    <a class="verse-2__continue-button" href="#" onclick="playVerse3()">Next</a>`;
 }
 
 function verse3() {
+    // Toggles the menu
+    toggleMenu();
+
+    // Displays and plays verse 2
+    playVerse3();
+}
+
+function playVerse3() {
     let content = document.getElementsByClassName("flex-container")[0]; // Reference to div for displaying content
     
     let active = document.getElementsByClassName("menu__menuItem--active"); // Reference to the active menu element
@@ -220,11 +232,7 @@ function verse3() {
     if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
 
         background.style.backgroundImage = "url('assets/images/gray-background.jpg')";  // The background of the home page
-
     }
-    
-    // Toggles the menu
-    toggleMenu();
 
     active[0].classList.remove("menu__menuItem--active"); // Removes the current active class item
 
@@ -266,12 +274,20 @@ function verse3() {
             </svg>
         </div>
     </div>
-    <a class="verse-3__continue-button" href="#" onclick="verse4()">Next</a>`;
+    <a class="verse-3__continue-button" href="#" onclick="playVerse4()">Next</a>`;
 }
 
-var verse4timeout = "inactive";
-var verse4interval;
 function verse4() {
+    // Toggles the menu
+    toggleMenu();
+
+    // Displays and plays verse 4
+    playVerse4();
+}
+
+function playVerse4() {
+    var verse4timeout = "inactive";
+    var verse4interval; 
 
     let content = document.getElementsByClassName("flex-container")[0]; // Reference to div for displaying content
     
@@ -284,11 +300,7 @@ function verse4() {
     if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
 
         background.style.backgroundImage = "url('assets/images/gray-background.jpg')";  // The background of the home page
-
     }
-
-    // Toggles the menu
-    toggleMenu();
 
     active[0].classList.remove("menu__menuItem--active"); // Removes the current active class item
 
@@ -340,7 +352,7 @@ function verse4() {
         <tspan id="verse4_sentence4-right" x="0" y="58"> as eiderdown.</tspan>
     </text>
 </svg>
-<a class="verse-4__continue-button" href="#" onclick="verse5()">Next</a>`;
+<a class="verse-4__continue-button" href="#" onclick="playVerse5()">Next</a>`;
 
     //set the initial colors
     setColor("verse4_sentence1");
@@ -372,6 +384,14 @@ function verse4() {
 }
 
 function verse5() {
+    // Toggles the menu
+    toggleMenu();
+
+    // Displays and plays verse 4
+    playVerse5();
+}
+
+function playVerse5() {
     let content = document.getElementsByClassName("flex-container")[0]; // Reference to div for displaying content
     
     let active = document.getElementsByClassName("menu__menuItem--active"); // Reference to the active menu element
@@ -385,10 +405,7 @@ function verse5() {
         background.style.backgroundImage = "url('assets/images/gray-background.jpg')";  // The background of the home page
 
     }
-
-    // Toggles the menu
-    toggleMenu();
-
+    
     active[0].classList.remove("menu__menuItem--active"); // Removes the current active class item
 
     list[5].classList.add("menu__menuItem--active"); // Adds the active class to the clicked menu item
