@@ -11,6 +11,8 @@ $button-opacity: 50%;
     color: white;
     background-color: rgb(57, 60, 127);
 
+    z-index: 100;
+
     -webkit-animation: fade-in--button 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation: fade-in--button 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
