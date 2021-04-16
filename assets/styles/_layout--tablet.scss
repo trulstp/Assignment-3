@@ -31,7 +31,7 @@
         grid-area: main;
         align-self: start;
         z-index: 100;
-        background-color: rgba(72, 76, 163, 0.95);
+        background-color: $color-navigation-tablet;
         display: none;
         }
 
@@ -72,7 +72,7 @@
         
     .box { 
         grid-area: header;
-        background-color: rgba(72, 76, 163, 1);
+        background-color: $color-box-tablet;
     }
 }
 
