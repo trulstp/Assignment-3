@@ -110,7 +110,7 @@ footer {
 .box { 
     grid-area: 1 / 1 / 4 / 2; 
 
-    background-color: rgba(72, 76, 163, 0.85);
+    background-color: $color-box;
 
     z-index: -100;
 }
