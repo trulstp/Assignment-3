@@ -2,11 +2,16 @@
 // Different text colours
 // Theme colours/navigation colours
 
-// verse1 colors
+//Theme
+$color-white: white;
+$color-active-page: #6367CB;
+$color-box: rgba(72, 76, 163, 0.85);
+
+//Verse 1
 $primary-color: #000000;
 $alternate-color: #FFFFFF;
 
-//verse 2
+//Verse 2
 $summer-color-1: #183348;
 $summer-color-2: #5ba547;
 
@@ -18,7 +23,7 @@ $winter-color-1: #55ced6;
 $winter-color-2: #78b2bf;
 $winter-color-3: #b8f0f5;
 
-//verse 3
+//Verse 3
 $skyBlue: #87ceeb;
 $silver: #C0C0C0;
 $red: #ff453e;
