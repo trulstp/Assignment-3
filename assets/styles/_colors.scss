@@ -2,11 +2,33 @@
 // Different text colours
 // Theme colours/navigation colours
 
-// verse1 colors
+//Theme
+$color-white: white;
+
+$color-active-page: #6367CB;
+
+$color-navigation-tablet: rgba(72, 76, 163, 0.95);
+
+$color-box-tablet: rgba(72, 76, 163, 1);
+$color-box: rgba(72, 76, 163, 0.85);
+
+$color-button-background: rgb(57, 60, 127);
+$color-button-font: white; 
+
+//Verse 1
 $primary-color: #000000;
 $alternate-color: #FFFFFF;
 
-//verse 2
+$color-v1-0: red;
+$color-v1-14: rgb(255, 102, 0);
+$color-v1-28: rgb(255, 255, 0);
+$color-v1-42: rgb(116, 204, 116);
+$color-v1-56: rgb(0, 238, 255);
+$color-v1-70: rgb(167, 50, 250);
+$color-v1-84: rgb(255, 0, 255);
+$color-v1-100: rgb(175, 113, 113);
+
+//Verse 2
 $summer-color-1: #183348;
 $summer-color-2: #5ba547;
 
@@ -18,9 +40,15 @@ $winter-color-1: #55ced6;
 $winter-color-2: #78b2bf;
 $winter-color-3: #b8f0f5;
 
-//verse 3
+//Verse 3
 $skyBlue: #87ceeb;
 $silver: #C0C0C0;
 $red: #ff453e;
 $appleGreen: #8db600;
-$buttonColor: rgb(57, 60, 127);
+
+//Verse 5
+$color-v5-0: #6666ff;
+$color-v5-10: #0099ff;
+$color-v5-50: #00ff00;
+$color-v5-75: #ff3399;
+$color-v5-100: #6666ff;

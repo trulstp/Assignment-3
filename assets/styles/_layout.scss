@@ -36,7 +36,7 @@ header {
     grid-area: header;
     align-self: center;
 
-    color: white;
+    color: $color-white;
 
     display: flex;
 	justify-content: center;
@@ -73,7 +73,7 @@ nav {
 
     list-style-type: none;
 
-    color: white;
+    color: $color-white;
 
     font-size: larger;
 
@@ -89,7 +89,7 @@ nav {
     &__menuItem--active {
         font-weight: bold;
 
-        background-color: #6367CB;
+        background-color: $color-active-page;
     }
 
     &__menuItem--hidden {
@@ -110,7 +110,7 @@ footer {
 .box { 
     grid-area: 1 / 1 / 4 / 2; 
 
-    background-color: rgba(72, 76, 163, 0.85);
+    background-color: $color-box;
 
     z-index: -100;
 }
@@ -118,7 +118,7 @@ footer {
 /* These must be specified more and changed... */
 /* unvisited link */
 a:link {
-  color: white;
+  color: $color-white;;
 
   text-decoration: none;
 
@@ -127,19 +127,19 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: white;
+  color: $color-white;;
 }
 
 /* mouse over link */
 a:hover {
-    color: white;
+    color: $color-white;;
 
     opacity: 100%;
 }
 
 /* selected link */
 a:active {
-  color: white;
+  color: $color-white;;
 }
 .verse1_layout_box {
     display: inline-grid;
@@ -701,18 +701,6 @@ div.verse-3__grid-item_button {
     align-self: center;
     animation: fadeIn 0.6s ease 13s forwards;
     opacity: 0;
-    button {
-        padding: 15px 25px;
-        border-radius: 20px 20px;
-    
-        color: white;
-        background-color: $buttonColor;
-    
-        &:hover {
-            background-color: lighten($buttonColor, 10%);
-            cursor: pointer;
-                }
-    }
 }
 
   .verse-5-first {

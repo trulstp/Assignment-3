@@ -8,8 +8,8 @@ $button-opacity: 50%;
     padding: 15px 25px;
     border-radius: 20px 20px;
 
-    color: white;
-    background-color: rgb(57, 60, 127);
+    color: $color-button-font;
+    background-color: $color-button-background;
 
     z-index: 100;
 
@@ -18,7 +18,7 @@ $button-opacity: 50%;
 }
 
 .info-button {
-    color: white;
+    color: $color-button-font;
 
     &:hover {
         opacity: $button-opacity;
@@ -29,8 +29,8 @@ $button-opacity: 50%;
     padding: 15px 25px;
     border-radius: 20px 20px;
 
-    color: white;
-    background-color: rgb(57, 60, 127);
+    color: $color-button-font;
+    background-color: $color-button-background;
 
     &:hover {
         opacity: $button-opacity;
