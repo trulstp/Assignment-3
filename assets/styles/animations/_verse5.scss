@@ -1,19 +1,19 @@
 
 @keyframes colorRotate {
     from {
-      color: #6666ff;
+      color: $color-v5-0;
     }
     10% {
-      color: #0099ff;
+      color: $color-v5-10;
     }
     50% {
-      color: #00ff00;
+      color: $color-v5-50;
     }
     75% {
-      color: #ff3399;
+      color: $color-v5-75;
     }
     100% {
-      color: #6666ff;
+      color: $color-v5-100;
     }
   }
     
