@@ -701,18 +701,6 @@ div.verse-3__grid-item_button {
     align-self: center;
     animation: fadeIn 0.6s ease 13s forwards;
     opacity: 0;
-    button {
-        padding: 15px 25px;
-        border-radius: 20px 20px;
-    
-        color: $color-white;
-        background-color: $buttonColor;
-    
-        &:hover {
-            background-color: lighten($buttonColor, 10%);
-            cursor: pointer;
-                }
-    }
 }
 
   .verse-5-first {

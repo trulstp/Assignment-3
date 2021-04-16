@@ -893,18 +893,6 @@ div.verse-3__grid-item_button {
   opacity: 0;
 }
 
-div.verse-3__grid-item_button button {
-  padding: 15px 25px;
-  border-radius: 20px 20px;
-  color: white;
-  background-color: #393c7f;
-}
-
-div.verse-3__grid-item_button button:hover {
-  background-color: #494da2;
-  cursor: pointer;
-}
-
 .verse-5-first {
   white-space: nowrap;
   padding: 20px;
