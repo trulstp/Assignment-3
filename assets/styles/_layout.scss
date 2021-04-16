@@ -36,7 +36,7 @@ header {
     grid-area: header;
     align-self: center;
 
-    color: white;
+    color: $color-white;
 
     display: flex;
 	justify-content: center;
@@ -73,7 +73,7 @@ nav {
 
     list-style-type: none;
 
-    color: white;
+    color: $color-white;
 
     font-size: larger;
 
@@ -118,7 +118,7 @@ footer {
 /* These must be specified more and changed... */
 /* unvisited link */
 a:link {
-  color: white;
+  color: $color-white;;
 
   text-decoration: none;
 
@@ -127,19 +127,19 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: white;
+  color: $color-white;;
 }
 
 /* mouse over link */
 a:hover {
-    color: white;
+    color: $color-white;;
 
     opacity: 100%;
 }
 
 /* selected link */
 a:active {
-  color: white;
+  color: $color-white;;
 }
 .verse1_layout_box {
     display: inline-grid;
@@ -705,7 +705,7 @@ div.verse-3__grid-item_button {
         padding: 15px 25px;
         border-radius: 20px 20px;
     
-        color: white;
+        color: $color-white;
         background-color: $buttonColor;
     
         &:hover {
