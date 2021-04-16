@@ -89,7 +89,7 @@ nav {
     &__menuItem--active {
         font-weight: bold;
 
-        background-color: #6367CB;
+        background-color: $color-active-page;
     }
 
     &__menuItem--hidden {
