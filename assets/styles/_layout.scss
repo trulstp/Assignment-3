@@ -750,8 +750,10 @@ div.verse-3__grid-item_button {
 
   .about-box {
     max-width: 40rem;
-    background-color: $color-white;
+
     border-radius: 2rem;
+
+    background-color: $color-white;
   }
 
   .card {
@@ -766,10 +768,12 @@ div.verse-3__grid-item_button {
     }
 
     &__logo {
+      display: block;
+
+      width: 10rem;
+
       margin-top: 2rem;
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     width: 10rem;
+      margin-left: auto;
+      margin-right: auto;
     }
   }

@@ -949,8 +949,8 @@ div.verse-3__grid-item_button {
 
 .about-box {
   max-width: 40rem;
-  background-color: white;
   border-radius: 2rem;
+  background-color: white;
 }
 
 .card {
@@ -966,11 +966,11 @@ div.verse-3__grid-item_button {
 }
 
 .card__logo {
-  margin-top: 2rem;
   display: block;
+  width: 10rem;
+  margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
-  width: 10rem;
 }
 
 .info-icon {
