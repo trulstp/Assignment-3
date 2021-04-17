@@ -442,3 +442,33 @@ function playVerse5() {
 </div>
 <a class="verse-5__continue-button" href="#" onclick="playVerse1()">Play again?</a>`;
 }
+
+function about() {
+    // Toggles the menu
+    toggleMenu();
+
+    // Displays info about the project
+    aboutProject();
+}
+
+function aboutProject() {
+    let content = document.getElementsByClassName("flex-container")[0]; // Reference to div for displaying content
+    
+    let active = document.getElementsByClassName("menu__menuItem--active"); // Reference to the active menu element
+
+    let list = document.querySelectorAll(".menu > li"); // Reference to all menu items
+
+    let background = document.querySelector("html"); // Reference to the website background
+
+    if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
+
+        background.style.backgroundImage = "url('assets/images/gray-background.jpg')";  // The background of the home page
+
+    }
+    
+    active[0].classList.remove("menu__menuItem--active"); // Removes the current active class item
+
+    list[6].classList.add("menu__menuItem--active"); // Adds the active class to the clicked menu item
+
+    content.innerHTML = `<h1>Test</h1>`;
+}
