@@ -773,7 +773,26 @@ div.verse-3__grid-item_button {
       width: 10rem;
 
       margin-top: 2rem;
+      margin-bottom: 1rem;
       margin-left: auto;
       margin-right: auto;
+    }
+  }
+
+  .card > p, .card__inside__content > p {
+    line-height: 1.5rem;
+  }
+
+  .card__inside {
+    background-color: $color-card-inside;
+
+    border-radius: 2rem;
+
+    &__content {
+      padding: 1rem;
+    }
+
+    &__content > p {
+      text-align: center;
     }
   }

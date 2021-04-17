@@ -474,12 +474,17 @@ function aboutProject() {
     <div class="about-box">
         <div class="card">
         <h2 class="card__title">About the project</h2>
-        <p>Lorem ipsum dolor sit ament abra kadbra shim sahallabim</p>
-        <p>Lisens</p>
-        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="card__inside">
+        <div class="card__inside__content">
         <p><span class="card__bold">Project version:</span> 3 - Production release</p>
         <p><span class="card__bold">Developers:</span> Sivert Grønli Amundsen, Henrik Landgraff Granum, Marie Holme Kjær, Truls Teige Pettersen and Kristian Wobbes</p>
         <a href="https://www.ntnu.no/"><img class="card__logo" src="assets/svgs/logo_ntnu.svg" alt="Norwegian University of Science and Technology"></a>
+        </div>
+        </div>
         </div>
     </div>`;
 }
