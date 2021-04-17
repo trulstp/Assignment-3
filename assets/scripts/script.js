@@ -470,5 +470,16 @@ function aboutProject() {
 
     list[6].classList.add("menu__menuItem--active"); // Adds the active class to the clicked menu item
 
-    content.innerHTML = `<h1>Test</h1>`;
+    content.innerHTML = `
+    <div class="about-box">
+        <div class="card">
+        <h2 class="card__title">About the project</h2>
+        <p>Lorem ipsum dolor sit ament abra kadbra shim sahallabim</p>
+        <p>Lisens</p>
+        <hr>
+        <p><span class="card__bold">Project version:</span> 3 - Production release</p>
+        <p><span class="card__bold">Developers:</span> Sivert Grønli Amundsen, Henrik Landgraff Granum, Marie Holme Kjær, Truls Teige Pettersen and Kristian Wobbes</p>
+        <a href="https://www.ntnu.no/"><img class="card__logo" src="assets/svgs/logo_ntnu.svg" alt="Norwegian University of Science and Technology"></a>
+        </div>
+    </div>`;
 }

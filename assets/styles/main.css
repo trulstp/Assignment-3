@@ -947,6 +947,32 @@ div.verse-3__grid-item_button {
   margin-bottom: 10%;
 }
 
+.about-box {
+  max-width: 40rem;
+  background-color: white;
+  border-radius: 2rem;
+}
+
+.card {
+  padding: 2rem;
+}
+
+.card__bold {
+  font-weight: bold;
+}
+
+.card__title {
+  margin-top: 0;
+}
+
+.card__logo {
+  margin-top: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10rem;
+}
+
 .info-icon {
   padding-right: 10px;
 }
