@@ -442,3 +442,49 @@ function playVerse5() {
 </div>
 <a class="verse-5__continue-button" href="#" onclick="playVerse1()">Play again?</a>`;
 }
+
+function about() {
+    // Toggles the menu
+    toggleMenu();
+
+    // Displays info about the project
+    aboutProject();
+}
+
+function aboutProject() {
+    let content = document.getElementsByClassName("flex-container")[0]; // Reference to div for displaying content
+    
+    let active = document.getElementsByClassName("menu__menuItem--active"); // Reference to the active menu element
+
+    let list = document.querySelectorAll(".menu > li"); // Reference to all menu items
+
+    let background = document.querySelector("html"); // Reference to the website background
+
+    if (background.style.backgroundImage != "url('assets/images/gray-background.jpg')") { // If the background is not gray already, make it gray
+
+        background.style.backgroundImage = "url('assets/images/gray-background.jpg')";  // The background of the home page
+
+    }
+    
+    active[0].classList.remove("menu__menuItem--active"); // Removes the current active class item
+
+    list[6].classList.add("menu__menuItem--active"); // Adds the active class to the clicked menu item
+
+    content.innerHTML = `
+    <div class="about-box">
+        <div class="card">
+        <h2 class="card__title">About the project</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="card__inside">
+        <div class="card__inside__content">
+        <p><span class="card__bold">Project version:</span> 3 - Production release</p>
+        <p><span class="card__bold">Developers:</span> Sivert Grønli Amundsen, Henrik Landgraff Granum, Marie Holme Kjær, Truls Teige Pettersen and Kristian Wobbes</p>
+        <a href="https://www.ntnu.no/"><img class="card__logo" src="assets/svgs/logo_ntnu.svg" alt="Norwegian University of Science and Technology"></a>
+        </div>
+        </div>
+        </div>
+    </div>`;
+}

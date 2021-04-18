@@ -747,3 +747,52 @@ div.verse-3__grid-item_button {
     width: 100%;
     margin-bottom: 10%;  
   }
+
+  .about-box {
+    max-width: 40rem;
+
+    border-radius: 2rem;
+
+    background-color: $color-white;
+  }
+
+  .card {
+    padding: 2rem;
+
+    &__bold {
+      font-weight: bold;
+    }
+
+    &__title {
+      margin-top: 0;
+    }
+
+    &__logo {
+      display: block;
+
+      width: 10rem;
+
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .card > p, .card__inside__content > p {
+    line-height: 1.5rem;
+  }
+
+  .card__inside {
+    background-color: $color-card-inside;
+
+    border-radius: 2rem;
+
+    &__content {
+      padding: 1rem;
+    }
+
+    &__content > p {
+      text-align: center;
+    }
+  }

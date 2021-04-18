@@ -947,6 +947,50 @@ div.verse-3__grid-item_button {
   margin-bottom: 10%;
 }
 
+.about-box {
+  max-width: 40rem;
+  border-radius: 2rem;
+  background-color: white;
+}
+
+.card {
+  padding: 2rem;
+}
+
+.card__bold {
+  font-weight: bold;
+}
+
+.card__title {
+  margin-top: 0;
+}
+
+.card__logo {
+  display: block;
+  width: 10rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card > p, .card__inside__content > p {
+  line-height: 1.5rem;
+}
+
+.card__inside {
+  background-color: rgba(63, 191, 191, 0.2);
+  border-radius: 2rem;
+}
+
+.card__inside__content {
+  padding: 1rem;
+}
+
+.card__inside__content > p {
+  text-align: center;
+}
+
 .info-icon {
   padding-right: 10px;
 }
