@@ -1,12 +1,12 @@
 # Group 8 - Mjøsa
-We chose this name because Mjøsa is the largest lake in Norway.
+Our group name is based on a lake which is locally known, and the biggest lake we got in Norway. We chose this name since it is short and easy to remember, and also has some good associations.
 
 ## About the project
-In this project we will design an animation based on our chosen text.
+The project team consists of five students from the course “Advanced CSS” at NTNU Gjøvik. For 10 weeks we have been working on making an animated version of the song “Favorite colour” by Joni Mitchell, with the purpose of creative and correct use of different CSS technologies.  
 
-In the project we will use BEM naming conventions to familiarize us with it and provide clarity.
+The final result is a webpage divided into the five verses, with a slightly different look and use of CSS for each of them. Our main focus has been on what we can do with typography and the use of animation framework. 
 
-We will use GitHub to store all our updates to the animation, so that we are used to working in groups on GitHub.
+Some of the project requirements was support for mobile and desktop, in addition to the use of BEM methodology and SASS preprocessor.
 
 ## The text for our project
 
@@ -37,6 +37,6 @@ And said, "By mixing all of these
 Comes my favourite colour--love."
 
 ## How we will implement Separation of Concerns and BEM
-Separation of concerns is helping to focus on one aspect of a problem at a time, and usually consists of different technologies for each of the concerns. For our project we will be using HTML, CSS and SCSS. Our styling will be separated into different categories to separate them, and make it easier to do changes and have control. Two of the subcategories we will include will at least be colours and typography in one way or another. 
+Separation of concerns is helping to focus on one aspect of a problem at a time, and usually consists of different technologies for each of the concerns. For our project we have made use of HTML, CSS, JavaScript and SASS. We have separated the whole structure into CSS styling, images, scripts, fonts, and SVGS. The CSS styling is further separated using SASS. 
 
-BEM stands for «Block element modifier» and is a naming convention used in development for making the code easier to read and understand. It is the naming convention standard that we will be using for our project to keep our CSS understandable.
+BEM stands for «Block element modifier» and is a naming convention used in development for making the code easier to read and understand. It is the naming convention standard that we have used for our project to keep our CSS class names readable and easy to maintain.
