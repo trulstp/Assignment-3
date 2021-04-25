@@ -37,6 +37,6 @@ And said, "By mixing all of these
 Comes my favourite colour--love."
 
 ## How we will implement Separation of Concerns and BEM
-Separation of concerns is helping to focus on one aspect of a problem at a time, and usually consists of different technologies for each of the concerns. For our project we have made use of HTML, CSS, JavaScript and SASS. Our styling is separated into different categories to separate them, and make it easier to do changes and have control. We have separated the whole structure into CSS styling, images, scripts, fonts, and SVGS. The CSS styling is further separated using SASS. 
+Separation of concerns is helping to focus on one aspect of a problem at a time, and usually consists of different technologies for each of the concerns. For our project we have made use of HTML, CSS, JavaScript and SASS. We have separated the whole structure into CSS styling, images, scripts, fonts, and SVGS. The CSS styling is further separated using SASS. 
 
 BEM stands for «Block element modifier» and is a naming convention used in development for making the code easier to read and understand. It is the naming convention standard that we have used for our project to keep our CSS class names readable and easy to maintain.
