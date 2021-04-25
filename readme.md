@@ -1,5 +1,5 @@
 # Group 8 - Mjøsa
-Our group name is based on a local lake which is locally known, and the biggest lake we got in Norway. We chose this name since it is short and easy to remember, and also has some good associations.
+Our group name is based on a lake which is locally known, and the biggest lake we got in Norway. We chose this name since it is short and easy to remember, and also has some good associations.
 
 ## About the project
 The project team consists of five students from the course “Advanced CSS” at NTNU Gjøvik. For 10 weeks we have been working on making an animated version of the song “Favorite colour” by Joni Mitchell, with the purpose of creative and correct use of different CSS technologies.  
