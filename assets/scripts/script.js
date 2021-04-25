@@ -414,8 +414,8 @@ function playVerse5() {
         
     <span class="verse-5-first">She took her crayons from a box</span>
     <span class="verse-5-second">And placed them in my glove</span>
-    <span class="verse-5-third">And said, "By mixing all of these"</span>
-    <span class="verse-5-fourth">Comes my favourite <p class="rainbow-verse5"> color</p> </span>
+    <span class="verse-5-third">And said, "By mixing all of these</span>
+    <span class="verse-5-fourth">Comes my favourite <p class="rainbow-verse5"> color</p> "</span>
     <span class="fade-in-love">
 
     <svg class="love-verse5" width="100" height="100" fill-opacity="1" fill="none" style="padding-left: 10px;">
@@ -438,8 +438,14 @@ function playVerse5() {
 
 </svg>
 </span>
-   
+        <div class="verse-5__heart">
+        <img class="verse-5__heart--size" src="assets/svgs/like.svg" alt="A heart">
+        </div>
 </div>
+
+
+ 
+
 <a class="verse-5__continue-button" href="#" onclick="playVerse1()">Play again?</a>`;
 }
 

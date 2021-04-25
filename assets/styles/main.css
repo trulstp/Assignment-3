@@ -60,7 +60,7 @@ html {
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
-      grid-template-areas: "header main" "nav main" "footer main";
+      grid-template-areas: "header main" "nav main" "footer main";
 }
 
 .flex-container {
@@ -414,7 +414,7 @@ a:active {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      grid-template-areas: "line1 line1 ." ". line2 line2";
+      grid-template-areas: "line1 line1 ." ". line2 line2";
   -webkit-animation: tilt-in-fwd-tl 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: tilt-in-fwd-tl 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 0.5s;
@@ -436,7 +436,7 @@ a:active {
       grid-template-columns: auto 1fr 1fr auto;
   -ms-grid-rows: auto 1fr 1fr auto;
       grid-template-rows: auto 1fr 1fr auto;
-      grid-template-areas: ". . . ." "leaf1 line3 . ." "leaf1 line4 line4 leaf2" ". . . .";
+      grid-template-areas: ". . . ." "leaf1 line3 . ." "leaf1 line4 line4 leaf2" ". . . .";
   -webkit-animation: tilt-in-fwd-tr 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: tilt-in-fwd-tr 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 3.5s;
@@ -456,7 +456,7 @@ a:active {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "line5 line5 . . ." ". line6 line6 . ." ". . . . ." "line7 line7 line7 line7 line7";
+      grid-template-areas: "line5 line5 . . ." ". line6 line6 . ." ". . . . ." "line7 line7 line7 line7 line7";
   -webkit-animation: slide-in-elliptic-top-fwd 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-elliptic-top-fwd 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 7s;
@@ -709,7 +709,7 @@ a:active {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-      grid-template-areas: ". one one one ." ". . . text-box ." ". two two two ." ". three three . ." ". . text-divide text-divide ." "img-one four four four img-two" ". . . . btn";
+      grid-template-areas: ". one one one ." ". . . text-box ." ". two two two ." ". three three . ." ". . text-divide text-divide ." "img-one four four four img-two" ". . . . btn";
   height: 100vh;
   font-size: 2rem;
 }
@@ -896,21 +896,25 @@ div.verse-3__grid-item_button {
 .verse-5-first {
   white-space: nowrap;
   padding: 20px;
+  font-size: 25px;
 }
 
 .verse-5-second {
   white-space: nowrap;
   padding: 20px;
+  font-size: 25px;
 }
 
 .verse-5-third {
   white-space: nowrap;
   padding: 20px;
+  font-size: 25px;
 }
 
 .verse-5-fourth {
   white-space: nowrap;
   padding: 20px;
+  font-size: 25px;
 }
 
 .div1-verse5 {
@@ -920,16 +924,15 @@ div.verse-3__grid-item_button {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  font-family: 'Roboto', sans-serif;
 }
 
 .text-verse5 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 14px;
 }
 
 .rainbow-verse5 {
-  padding-left: 4px;
+  padding-left: 10px;
+  font-size: 25px;
 }
 
 .love-verse5 {
@@ -945,6 +948,30 @@ div.verse-3__grid-item_button {
   margin: auto;
   width: 100%;
   margin-bottom: 10%;
+}
+
+.verse-5__heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  margin: auto;
+  width: 50%;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+.verse-5__heart--size {
+  width: auto;
+  height: 50px;
+  -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 17s both;
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 15s both;
 }
 
 .about-box {
@@ -1100,7 +1127,7 @@ div.verse-3__grid-item_button {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto 1.8fr;
         grid-template-rows: auto 1.8fr;
-        grid-template-areas: "header" "main";
+        grid-template-areas: "header" "main";
     overflow: hidden;
   }
   .flex-container {
@@ -1202,7 +1229,7 @@ div.verse-3__grid-item_button {
   .verse-2__grid-container--3 {
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: ". line5 line5 . . ." ". . line6 line6 . ." ". . . . . ." ". line7 line7 line7 line7 .";
+        grid-template-areas: ". line5 line5 . . ." ". . line6 line6 . ." ". . . . . ." ". line7 line7 line7 line7 .";
   }
   .verse-2__line-1--1 {
     font-size: 1.5rem;
@@ -2447,6 +2474,124 @@ div.verse-3__grid-item_button {
     opacity: 0;
   }
   100% {
+    opacity: 1;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-4-25 15:41:29
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-4-25 15:50:44
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation slide-in-fwd-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
     opacity: 1;
   }
 }
