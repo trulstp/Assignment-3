@@ -480,10 +480,9 @@ function aboutProject() {
     <div class="about-box">
         <div class="card">
         <h2 class="card__title">About the project</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>The project team consists of five students from the course “Advanced CSS” at NTNU Gjøvik. For 10 weeks we have been working on making an animated version of the song “Favorite colour” by Joni Mitchell, with the purpose of creative and correct use of different CSS technologies.
+        The final result is a webpage divided into the five verses, with a slightly different look and use of CSS for each of them. Our main focus has been on what we can do with typography and the use of animation framework.
+        Some of the project requirements was support for mobile and desktop, in addition to the use of BEM methodology and SASS preprocessor.</p>
         <div class="card__inside">
         <div class="card__inside__content">
         <p><span class="card__bold">Project version:</span> 3 - Production release</p>
