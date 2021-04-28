@@ -74,6 +74,9 @@
         grid-area: header;
         background-color: $color-box-tablet;
     }
+    .verse1_line4 {
+        grid-row: 7;
+    }
 }
 
 //If screen width is 900px or smaller - Tablet/mobile

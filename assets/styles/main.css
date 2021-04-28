@@ -216,8 +216,8 @@ a:active {
 .verse1_layout_box {
   display: -ms-inline-grid;
   display: inline-grid;
-  -ms-grid-columns: 10% 20% 5% 10% 10% 5% 20% 10%;
-      grid-template-columns: 10% 20% 5% 10% 10% 5% 20% 10%;
+  -ms-grid-columns: 10% 25% 5% 5% 5% 15% 20% 10%;
+      grid-template-columns: 10% 25% 5% 5% 5% 15% 20% 10%;
   -ms-grid-rows: 10% 10% 10% 10% 10% 10% 10% 10%;
       grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10%;
   opacity: 0.8;
@@ -229,8 +229,8 @@ a:active {
 
 .verse1_line1 {
   -ms-grid-column: 4;
-  -ms-grid-column-span: 2;
-  grid-column: 4 / span 2;
+  -ms-grid-column-span: 3;
+  grid-column: 4 / span 3;
   -ms-grid-row: 3;
   grid-row: 3;
   font-weight: 400;
@@ -245,9 +245,9 @@ a:active {
 }
 
 .verse1_line2 {
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 2;
-  grid-column: 4 / span 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-column: 3 / span 4;
   -ms-grid-row: 4;
   grid-row: 4;
   opacity: 0;
@@ -282,8 +282,8 @@ a:active {
 }
 
 .verse1_smiley2 {
-  -ms-grid-column: 5;
-  grid-column: 5;
+  -ms-grid-column: 6;
+  grid-column: 6;
   -ms-grid-row: 5;
   grid-row: 5;
   opacity: 0;
@@ -318,8 +318,8 @@ a:active {
 
 .verse1_line4 {
   opacity: 0;
-  -ms-grid-column: 4;
-  grid-column: 4;
+  -ms-grid-column: 3;
+  grid-column: 3;
   -ms-grid-row: 8;
   grid-row: 8;
   font-weight: 700;
@@ -1134,6 +1134,10 @@ div.verse-3__grid-item_button {
     grid-area: header;
     background-color: #484ca3;
   }
+  .verse1_line4 {
+    -ms-grid-row: 7;
+    grid-row: 7;
+  }
 }
 
 @media (max-width: 900px) {
@@ -1166,8 +1170,35 @@ div.verse-3__grid-item_button {
     display: none;
   }
   .verse1_layout_box {
-    width: 80%;
-    margin-top: 20px;
+    -ms-grid-columns: 10% 25% 5% 5% 5% 15% 20% 10%;
+        grid-template-columns: 10% 25% 5% 5% 5% 15% 20% 10%;
+    -ms-grid-rows: 10% 15% 5% 10% 5% 15% 5% 15%;
+        grid-template-rows: 10% 15% 5% 10% 5% 15% 5% 15%;
+  }
+  .verse1_line1 {
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .verse1_line2 {
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .verse1_smiley1 {
+    -ms-grid-column: 3;
+    grid-column: 3;
+  }
+  .verse1_svg {
+    -ms-grid-row: 6;
+    grid-row: 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-column: 1 / span 8;
+  }
+  .verse1_line4 {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 8;
+    grid-row: 8;
   }
   .verse-2__grid-container--3 {
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;

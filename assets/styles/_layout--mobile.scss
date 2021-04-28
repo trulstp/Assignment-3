@@ -16,10 +16,31 @@
             display: none;
         }
     }
-    
+
     .verse1_layout_box {
-        width: 80%;
-        margin-top: 20px;
+      grid-template-columns: 10% 25% 5% 5% 5% 15% 20% 10%;
+      grid-template-rows: 10% 15% 5% 10% 5% 15% 5% 15%;
+    }
+
+    .verse1_line1 {
+      grid-row: 2;
+    }
+    
+    .verse1_line2 {
+      grid-row: 3;
+    }
+
+    .verse1_smiley1 {
+      grid-column: 3;
+    }
+    .verse1_svg {
+      grid-row: 6;
+      grid-column: 1 / span 8;
+    }
+
+    .verse1_line4 {
+      grid-column: 2;
+      grid-row: 8;
     }
 
     .verse-2__grid-container--3 {
