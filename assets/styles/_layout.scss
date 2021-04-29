@@ -555,12 +555,12 @@ a:active {
     animation-delay: 8.5s;
   }
   
-  .rainbow-verse5 {
+  .rainbow__verse5 {
     text-align: center;
-    font-size: 20px;
-    animation: colorRotate 6s linear 0s infinite;
+    font-size: 27px;
+    animation: colorRotate 5s linear 0s infinite;
     margin: 0;
-    padding: 1px;
+    padding: 2.5px;
   }
   
   .verse-3__grid-container {
@@ -703,48 +703,48 @@ div.verse-3__grid-item_button {
     opacity: 0;
 }
 
-  .verse-5-first {
+  .verse__5--first {
    white-space: nowrap;
    padding: 20px;
    font-size: 25px;
   }
   
-  .verse-5-second {
+  .verse__5--second {
    white-space: nowrap;
    padding: 20px;
    font-size: 25px;
   }
   
-  .verse-5-third {
+  .verse__5--third {
     white-space: nowrap;
     padding: 20px;
     font-size: 25px;
   }
   
-  .verse-5-fourth {
+  .verse__5--fourth {
     white-space: nowrap;
     padding: 20px;
     font-size: 25px;
   }
   
   
-  .div1-verse5 {
+  .div1__verse5 {
     width: fit-content;
     height: fit-content;
     
   }
   
-  .text-verse5 {
+  .text__verse5 {
     
-    font-size: 14px;  
+    font-size: 25px;  
   }
   
-  .rainbow-verse5
+  .rainbow__verse5
   {
     padding-left: 10px;
     font-size: 25px;
   }
-  .love-verse5 {
+  .love__verse5 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -769,7 +769,7 @@ div.verse-3__grid-item_button {
 
   .verse-5__heart--size {
     width: auto;
-    height: 50px;
+    height: 65px;
     -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 17s both;
 	  animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 15s both;
   }

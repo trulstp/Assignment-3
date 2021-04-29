@@ -410,30 +410,30 @@ function playVerse5() {
 
     list[5].classList.add("menu__menuItem--active"); // Adds the active class to the clicked menu item
 
-    content.innerHTML = `<div class="div1-verse5">
-        
-    <span class="verse-5-first">She took her crayons from a box</span>
-    <span class="verse-5-second">And placed them in my glove</span>
-    <span class="verse-5-third">And said, "By mixing all of these</span>
-    <span class="verse-5-fourth">Comes my favourite <p class="rainbow-verse5"> color</p> "</span>
+    content.innerHTML = `
+    <div class="div1-verse5">
+    <span class="verse__5--first">She took her crayons from a box</span>
+    <span class="verse__5--second">And placed them in my glove</span>
+    <span class="verse__5--third">And said, "By mixing all of these</span>
+    <span class="verse__5--fourth">Comes my favourite <p class="rainbow__verse5"> color</p> "</span>
     <span class="fade-in-love">
 
-    <svg class="love-verse5" width="100" height="100" fill-opacity="1" fill="none" style="padding-left: 10px;">
+    <svg class="love__verse5" width="100" height="100" fill-opacity="1" fill="none" style="padding-left: 10px;">
         
-        <text class="text-verse5" x="15" y="50" fill="red" font-size="50" font-family="Arial, Helvetica, sans-serif">V
-            <animate attributeName="x" begin="13s" from="20" to="75" dur="2s" repeatCount="1" fill="freeze"></animate>
+        <text class="text-verse5" x="20" y="50" fill="red" font-size="50" font-family="Arial, Helvetica, sans-serif">V
+            <animate attributeName="x" begin="13s" from="20" to="90" dur="2s" repeatCount="1" fill="freeze"></animate>
         </text>
 
-        <text class="text-verse5" x="40" y="50" fill="red" font-size="50" font-family="Arial, Helvetica, sans-serif">L
-            <animate attributeName="x" begin="13s" from="40" to="15" dur="2s" repeatCount="1" fill="freeze"></animate>
+        <text class="text-verse5" x="50" y="50" fill="red" font-size="50" font-family="Arial, Helvetica, sans-serif">L
+            <animate attributeName="x" begin="13s" from="50" to="25" dur="2s" repeatCount="1" fill="freeze"></animate>
         </text>
 
         <text class="text-verse5" x="75" y="50" fill="red" font-size="50" font-family="Arial, Helvetica, sans-serif">E
-            <animate attributeName="x" begin="13s" from="75" to="105" dur="2s" repeatCount="1" fill="freeze"></animate>
+            <animate attributeName="x" begin="13s" from="75" to="125" dur="2s" repeatCount="1" fill="freeze"></animate>
         </text>
 
         <text class="text-verse5" x="105" y="50" fill="red" font-size="50" font-family="Arial, Helvetica, sans-serif">O
-            <animate attributeName="x" begin="13s" from="105" to="40" dur="2s" repeatCount="1" fill="freeze"></animate>
+            <animate attributeName="x" begin="13s" from="105" to="50" dur="2s" repeatCount="1" fill="freeze"></animate>
         </text>        
 
 </svg>
