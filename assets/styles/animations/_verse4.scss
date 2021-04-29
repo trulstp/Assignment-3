@@ -8,58 +8,63 @@
     100% {opacity: 1;}
 }
 
-$verse4_opacity-animation: verse4_opasity 3s;
+@keyframes verse4_sentence3_animation{
+    0% {text-shadow: 20px 20px; opacity: 0;}
+    100% {text-shadow: 0px 0px; opacity: 1;}
+}
 
-#verse4_sentence1{
+$verse4__opacity-animation: verse4_opasity 3s;
+
+#verse4__sentence1{
     font-family: $winter-font;
     font-size: 24px;
 
-    animation: $verse4_opacity-animation;
+    animation: $verse4__opacity-animation;
 }
 
-#verse4_sentence2{
+#verse4__sentence2{
     font-family: Kalam, Arial, Helvetica, sans-serif;
     font-size: 25px;
 
-    animation: $verse4_opacity-animation;
+    animation: $verse4__opacity-animation;
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
-#verse4_sentence3{
+#verse4__sentence3{
     font-family: $autumn-font;
     font-size: 50px;
 
-    animation: $verse4_opacity-animation;
+    animation: verse4_sentence3_animation 3s;
     animation-delay: 5s;
     animation-fill-mode: forwards;
 
-    #verse4_sentence3-line2{
+    #verse4__sentence3-line2{
         font-size: 40px;
     }
     
-    #verse4_sentence3-line3{
+    #verse4__sentence3-line3{
         font-size: 20px;
     }
     
-    #verse4_sentence3-line4{
+    #verse4__sentence3-line4{
         font-size: 23px;
     }
     
-    #verse4_sentence3-line5{
+    #verse4__sentence3-line5{
         font-size: 18px;
     }
 }
 
-#verse4_sentence4{
+#verse4__sentence4{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 26px;
 
-    animation: $verse4_opacity-animation;
+    animation: $verse4__opacity-animation;
     animation-delay: 8s;
     animation-fill-mode: forwards;
 
-    #verse4_sentence4-right{
+    #verse4__sentence4-right{
         font-size: 22px;
     }
 }
