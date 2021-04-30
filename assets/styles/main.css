@@ -216,8 +216,8 @@ a:active {
 .verse1_layout_box {
   display: -ms-inline-grid;
   display: inline-grid;
-  -ms-grid-columns: 10% 20% 5% 5% 5% 5% 10% 25% 10%;
-      grid-template-columns: 10% 20% 5% 5% 5% 5% 10% 25% 10%;
+  -ms-grid-columns: 10% 20% 9% 1% 5% 5% 10% 25% 10%;
+      grid-template-columns: 10% 20% 9% 1% 5% 5% 10% 25% 10%;
   -ms-grid-rows: 10% 10% 10% 10% 10% 10% 10% 10%;
       grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10%;
   opacity: 0.8;
@@ -234,7 +234,7 @@ a:active {
   grid-column: 5 / span 3;
   -ms-grid-row: 3;
   grid-row: 3;
-  font-weight: 400;
+  font-weight: 500;
   -webkit-animation-name: line1;
           animation-name: line1;
   -webkit-animation-duration: 10s;
@@ -246,14 +246,14 @@ a:active {
 }
 
 .verse1_line2 {
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 3;
-  grid-column: 5 / span 3;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 4;
+  grid-column: 4 / span 4;
   -ms-grid-row: 4;
   grid-row: 4;
   opacity: 0;
   font-weight: 500;
-  font-family: fantasy, Georgia, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   -webkit-animation-name: line2;
           animation-name: line2;
   -webkit-animation-delay: 6s;
@@ -319,8 +319,8 @@ a:active {
 
 .verse1_line4 {
   opacity: 0;
-  -ms-grid-column: 5;
-  grid-column: 5;
+  -ms-grid-column: 4;
+  grid-column: 4;
   -ms-grid-row: 8;
   grid-row: 8;
   font-weight: 700;
