@@ -285,10 +285,10 @@ function verse4() {
     playVerse4();
 }
 
+//NEED TO BE OUTSIDE OF FUNCTION
+var verse4timeout = "inactive";
+var verse4interval; 
 function playVerse4() {
-    var verse4timeout = "inactive";
-    var verse4interval; 
-
     let content = document.getElementsByClassName("flex-container")[0]; // Reference to div for displaying content
     
     let active = document.getElementsByClassName("menu__menuItem--active"); // Reference to the active menu element
@@ -312,8 +312,8 @@ function playVerse4() {
     <!--Head-->
     <circle class="head" cx="250" cy="66" r="50" fill="#e6e6e6"/>
     <!--Text head-->
-    <path id="headPath" d="M200,66a50,50 0 1,0 100,0a50,50 0 1,0 -100,0"/>
-    <text id="verse4_sentence1">
+    <path id="headPath" d="M200,66a50,50 0 1,0 100,0a50,50 0 1,0 -100,0" transform-origin="center"/>
+    <text id="verse4__sentence1">
         <textPath href="#headPath">Man is many colours child: </textPath>
     </text>
 
@@ -328,17 +328,19 @@ function playVerse4() {
     <rect x="315" y="122" width="22" height="23" rx="5" fill="#e6e6e6"/>
     
     <!--Arm text-->
-    <text id="verse4_sentence2" transform="translate(175,306) rotate(-90)" opacity="0">Some are yellow,
-        <tspan id="verse4_sentence2-right" x="0" y="165"> some are brown.</tspan>
+    <text id="verse4__sentence2" transform="translate(175,306) rotate(-90)" opacity="0">Some are yellow,
+        <animate attributeName="x" from="100" to="0" begin="2s" dur="3s"/>
+        <tspan id="verse4__sentence2-right" x="0" y="165"> some are brown.
+        <animate attributeName="x" from="100" to="0" begin="2s" dur="3s"/></tspan>
     </text>
 
     <!--Body-->
     <rect x="190" y="122" width="120" height="190" rx="5" fill="#e6e6e6"/>
-    <text id="verse4_sentence3" x="212" y="178" opacity="0">And 
-        <tspan id="verse4_sentence3-line2" x="206" y="220">some </tspan>
-        <tspan id="verse4_sentence3-line3" x="211" y="247">are black </tspan>
-        <tspan id="verse4_sentence3-line4" x="238" y="273">as </tspan>
-        <tspan id="verse4_sentence3-line5" x="198" y="295">sightlessness, </tspan>
+    <text id="verse4__sentence3" x="212" y="178" opacity="0" transform="scale(1)">And 
+        <tspan id="verse4__sentence3-line2" x="206" y="220">some </tspan>
+        <tspan id="verse4__sentence3-line3" x="211" y="247">are black </tspan>
+        <tspan id="verse4__sentence3-line4" x="238" y="273">as </tspan>
+        <tspan id="verse4__sentence3-line5" x="198" y="295">sightlessness, </tspan>
     </text>
 
     <!--Left leg-->
@@ -348,17 +350,19 @@ function playVerse4() {
     <rect x="255" y="316" width="50" height="150" rx="5" fill="#e6e6e6"/>
 
     <!--Leg text-->
-    <text id="verse4_sentence4" transform="translate(228,460) rotate(-90)" opacity="0">Some white
-        <tspan id="verse4_sentence4-right" x="0" y="58"> as eiderdown.</tspan>
+    <text id="verse4__sentence4" transform="translate(228,460) rotate(-90)" opacity="0">Some white
+    <animate attributeName="y" from="-402" to="0" begin="7s" dur="3s"/>
+        <tspan id="verse4__sentence4-right" x="0" y="58"> as eiderdown.
+        <animate attributeName="y" from="460" to="58" begin="7s" dur="3s"/></tspan>
     </text>
 </svg>
 <a class="verse-4__continue-button" href="#" onclick="playVerse5()">Next</a>`;
 
     //set the initial colors
-    setColor("verse4_sentence1");
-    setColor("verse4_sentence2");
-    setColor("verse4_sentence3");
-    setColor("verse4_sentence4");
+    setColor("verse4__sentence1");
+    setColor("verse4__sentence2");
+    setColor("verse4__sentence3");
+    setColor("verse4__sentence4");
 
     if(verse4timeout != "inactive"){clearTimeout(verse4timeout); clearInterval(verse4interval); interval();}
     
@@ -370,16 +374,16 @@ function playVerse4() {
         verse4timeout = setTimeout(function(){
 
             verse4interval = setInterval(function(){
-                setColor("verse4_sentence1");
-                setColor("verse4_sentence2");
-                setColor("verse4_sentence3");
-                setColor("verse4_sentence4");
+                setColor("verse4__sentence1");
+                setColor("verse4__sentence2");
+                setColor("verse4__sentence3");
+                setColor("verse4__sentence4");
             },1500); //1500ms = 1.5s
         },11000)
     }
 
-    function setColor(evt){
-        document.getElementById(evt).style.fill = "RGB(" + Math.floor(Math.random()*191) + "," + Math.floor(Math.random()*191) + "," + Math.floor(Math.random()*191) + ")";
+    function setColor(verse){
+        document.getElementById(verse).style.fill = "RGB(" + Math.floor(Math.random()*191) + "," + Math.floor(Math.random()*191) + "," + Math.floor(Math.random()*191) + ")";
     }
 }
 
