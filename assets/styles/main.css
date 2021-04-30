@@ -2083,14 +2083,36 @@ div.verse-3__grid-item_button {
   }
 }
 
-#verse4_sentence1 {
+@-webkit-keyframes verse4_sentence3_animation {
+  0% {
+    text-shadow: 20px 20px;
+    opacity: 0;
+  }
+  100% {
+    text-shadow: 0px 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes verse4_sentence3_animation {
+  0% {
+    text-shadow: 20px 20px;
+    opacity: 0;
+  }
+  100% {
+    text-shadow: 0px 0px;
+    opacity: 1;
+  }
+}
+
+#verse4__sentence1 {
   font-family: Winter, Arial, Helvetica, sans-serif;
   font-size: 24px;
   -webkit-animation: verse4_opasity 3s;
           animation: verse4_opasity 3s;
 }
 
-#verse4_sentence2 {
+#verse4__sentence2 {
   font-family: Kalam, Arial, Helvetica, sans-serif;
   font-size: 25px;
   -webkit-animation: verse4_opasity 3s;
@@ -2101,34 +2123,34 @@ div.verse-3__grid-item_button {
           animation-fill-mode: forwards;
 }
 
-#verse4_sentence3 {
+#verse4__sentence3 {
   font-family: Autumn, Arial, Helvetica, sans-serif;
   font-size: 50px;
-  -webkit-animation: verse4_opasity 3s;
-          animation: verse4_opasity 3s;
+  -webkit-animation: verse4_sentence3_animation 3s;
+          animation: verse4_sentence3_animation 3s;
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-#verse4_sentence3 #verse4_sentence3-line2 {
+#verse4__sentence3 #verse4__sentence3-line2 {
   font-size: 40px;
 }
 
-#verse4_sentence3 #verse4_sentence3-line3 {
+#verse4__sentence3 #verse4__sentence3-line3 {
   font-size: 20px;
 }
 
-#verse4_sentence3 #verse4_sentence3-line4 {
+#verse4__sentence3 #verse4__sentence3-line4 {
   font-size: 23px;
 }
 
-#verse4_sentence3 #verse4_sentence3-line5 {
+#verse4__sentence3 #verse4__sentence3-line5 {
   font-size: 18px;
 }
 
-#verse4_sentence4 {
+#verse4__sentence4 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 26px;
   -webkit-animation: verse4_opasity 3s;
@@ -2139,7 +2161,7 @@ div.verse-3__grid-item_button {
           animation-fill-mode: forwards;
 }
 
-#verse4_sentence4 #verse4_sentence4-right {
+#verse4__sentence4 #verse4__sentence4-right {
   font-size: 22px;
 }
 
