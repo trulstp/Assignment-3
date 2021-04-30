@@ -281,10 +281,10 @@ function verse4() {
     playVerse4();
 }
 
+//NEED TO BE OUTSIDE OF FUNCTION
+var verse4timeout = "inactive";
+var verse4interval; 
 function playVerse4() {
-    var verse4timeout = "inactive";
-    var verse4interval; 
-
     let content = document.getElementsByClassName("flex-container")[0]; // Reference to div for displaying content
     
     let active = document.getElementsByClassName("menu__menuItem--active"); // Reference to the active menu element
@@ -308,8 +308,8 @@ function playVerse4() {
     <!--Head-->
     <circle class="head" cx="250" cy="66" r="50" fill="#e6e6e6"/>
     <!--Text head-->
-    <path id="headPath" d="M200,66a50,50 0 1,0 100,0a50,50 0 1,0 -100,0"/>
-    <text id="verse4_sentence1">
+    <path id="headPath" d="M200,66a50,50 0 1,0 100,0a50,50 0 1,0 -100,0" transform-origin="center"/>
+    <text id="verse4__sentence1">
         <textPath href="#headPath">Man is many colours child: </textPath>
     </text>
 
@@ -324,17 +324,19 @@ function playVerse4() {
     <rect x="315" y="122" width="22" height="23" rx="5" fill="#e6e6e6"/>
     
     <!--Arm text-->
-    <text id="verse4_sentence2" transform="translate(175,306) rotate(-90)" opacity="0">Some are yellow,
-        <tspan id="verse4_sentence2-right" x="0" y="165"> some are brown.</tspan>
+    <text id="verse4__sentence2" transform="translate(175,306) rotate(-90)" opacity="0">Some are yellow,
+        <animate attributeName="x" from="100" to="0" begin="2s" dur="3s"/>
+        <tspan id="verse4__sentence2-right" x="0" y="165"> some are brown.
+        <animate attributeName="x" from="100" to="0" begin="2s" dur="3s"/></tspan>
     </text>
 
     <!--Body-->
     <rect x="190" y="122" width="120" height="190" rx="5" fill="#e6e6e6"/>
-    <text id="verse4_sentence3" x="212" y="178" opacity="0">And 
-        <tspan id="verse4_sentence3-line2" x="206" y="220">some </tspan>
-        <tspan id="verse4_sentence3-line3" x="211" y="247">are black </tspan>
-        <tspan id="verse4_sentence3-line4" x="238" y="273">as </tspan>
-        <tspan id="verse4_sentence3-line5" x="198" y="295">sightlessness, </tspan>
+    <text id="verse4__sentence3" x="212" y="178" opacity="0" transform="scale(1)">And 
+        <tspan id="verse4__sentence3-line2" x="206" y="220">some </tspan>
+        <tspan id="verse4__sentence3-line3" x="211" y="247">are black </tspan>
+        <tspan id="verse4__sentence3-line4" x="238" y="273">as </tspan>
+        <tspan id="verse4__sentence3-line5" x="198" y="295">sightlessness, </tspan>
     </text>
 
     <!--Left leg-->
@@ -344,17 +346,19 @@ function playVerse4() {
     <rect x="255" y="316" width="50" height="150" rx="5" fill="#e6e6e6"/>
 
     <!--Leg text-->
-    <text id="verse4_sentence4" transform="translate(228,460) rotate(-90)" opacity="0">Some white
-        <tspan id="verse4_sentence4-right" x="0" y="58"> as eiderdown.</tspan>
+    <text id="verse4__sentence4" transform="translate(228,460) rotate(-90)" opacity="0">Some white
+    <animate attributeName="y" from="-402" to="0" begin="7s" dur="3s"/>
+        <tspan id="verse4__sentence4-right" x="0" y="58"> as eiderdown.
+        <animate attributeName="y" from="460" to="58" begin="7s" dur="3s"/></tspan>
     </text>
 </svg>
 <a class="verse-4__continue-button" href="#" onclick="playVerse5()">Next</a>`;
 
     //set the initial colors
-    setColor("verse4_sentence1");
-    setColor("verse4_sentence2");
-    setColor("verse4_sentence3");
-    setColor("verse4_sentence4");
+    setColor("verse4__sentence1");
+    setColor("verse4__sentence2");
+    setColor("verse4__sentence3");
+    setColor("verse4__sentence4");
 
     if(verse4timeout != "inactive"){clearTimeout(verse4timeout); clearInterval(verse4interval); interval();}
     
@@ -366,16 +370,16 @@ function playVerse4() {
         verse4timeout = setTimeout(function(){
 
             verse4interval = setInterval(function(){
-                setColor("verse4_sentence1");
-                setColor("verse4_sentence2");
-                setColor("verse4_sentence3");
-                setColor("verse4_sentence4");
+                setColor("verse4__sentence1");
+                setColor("verse4__sentence2");
+                setColor("verse4__sentence3");
+                setColor("verse4__sentence4");
             },1500); //1500ms = 1.5s
         },11000)
     }
 
-    function setColor(evt){
-        document.getElementById(evt).style.fill = "RGB(" + Math.floor(Math.random()*191) + "," + Math.floor(Math.random()*191) + "," + Math.floor(Math.random()*191) + ")";
+    function setColor(verse){
+        document.getElementById(verse).style.fill = "RGB(" + Math.floor(Math.random()*191) + "," + Math.floor(Math.random()*191) + "," + Math.floor(Math.random()*191) + ")";
     }
 }
 
@@ -406,36 +410,42 @@ function playVerse5() {
 
     list[5].classList.add("menu__menuItem--active"); // Adds the active class to the clicked menu item
 
-    content.innerHTML = `<div class="div1-verse5">
-        
-    <span class="verse-5-first">She took her crayons from a box</span>
-    <span class="verse-5-second">And placed them in my glove</span>
-    <span class="verse-5-third">And said, "By mixing all of these"</span>
-    <span class="verse-5-fourth">Comes my favourite <p class="rainbow-verse5"> color</p> </span>
+    content.innerHTML = `
+    <div class="div1-verse5">
+    <span class="verse__5--first">She took her crayons from a box</span>
+    <span class="verse__5--second">And placed them in my glove</span>
+    <span class="verse__5--third">And said, "By mixing all of these</span>
+    <span class="verse__5--fourth">Comes my favourite <p class="rainbow__verse5"> color</p> "</span>
     <span class="fade-in-love">
 
-    <svg class="love-verse5" width="100" height="100" fill-opacity="1" fill="none" style="padding-left: 10px;">
+    <svg class="love__verse5" width="100" height="100" fill-opacity="1" fill="none" style="padding-left: 10px;">
         
-        <text class="text-verse5" x="15" y="50" fill="red" font-size="50" font-family="Arial, Helvetica, sans-serif">V
-            <animate attributeName="x" begin="13s" from="20" to="75" dur="2s" repeatCount="1" fill="freeze"></animate>
+        <text class="text-verse5" x="20" y="50" fill="red" font-size="50" font-family="Arial, Helvetica, sans-serif">V
+            <animate attributeName="x" begin="13s" from="20" to="90" dur="2s" repeatCount="1" fill="freeze"></animate>
         </text>
 
-        <text class="text-verse5" x="40" y="50" fill="red" font-size="50" font-family="Arial, Helvetica, sans-serif">L
-            <animate attributeName="x" begin="13s" from="40" to="15" dur="2s" repeatCount="1" fill="freeze"></animate>
+        <text class="text-verse5" x="50" y="50" fill="red" font-size="50" font-family="Arial, Helvetica, sans-serif">L
+            <animate attributeName="x" begin="13s" from="50" to="25" dur="2s" repeatCount="1" fill="freeze"></animate>
         </text>
 
         <text class="text-verse5" x="75" y="50" fill="red" font-size="50" font-family="Arial, Helvetica, sans-serif">E
-            <animate attributeName="x" begin="13s" from="75" to="105" dur="2s" repeatCount="1" fill="freeze"></animate>
+            <animate attributeName="x" begin="13s" from="75" to="125" dur="2s" repeatCount="1" fill="freeze"></animate>
         </text>
 
         <text class="text-verse5" x="105" y="50" fill="red" font-size="50" font-family="Arial, Helvetica, sans-serif">O
-            <animate attributeName="x" begin="13s" from="105" to="40" dur="2s" repeatCount="1" fill="freeze"></animate>
+            <animate attributeName="x" begin="13s" from="105" to="50" dur="2s" repeatCount="1" fill="freeze"></animate>
         </text>        
 
 </svg>
 </span>
-   
+        <div class="verse-5__heart">
+        <img class="verse-5__heart--size" src="assets/svgs/like.svg" alt="A heart">
+        </div>
 </div>
+
+
+ 
+
 <a class="verse-5__continue-button" href="#" onclick="playVerse1()">Play again?</a>`;
 }
 
@@ -470,10 +480,9 @@ function aboutProject() {
     <div class="about-box">
         <div class="card">
         <h2 class="card__title">About the project</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>The project team consists of five students from the course “Advanced CSS” at NTNU Gjøvik. For 10 weeks we have been working on making an animated version of the song “Favorite colour” by Joni Mitchell, with the purpose of creative and correct use of different CSS technologies.
+        The final result is a webpage divided into the five verses, with a slightly different look and use of CSS for each of them. Our main focus has been on what we can do with typography and the use of animation framework.
+        Some of the project requirements was support for mobile and desktop, in addition to the use of BEM methodology and SASS preprocessor.</p>
         <div class="card__inside">
         <div class="card__inside__content">
         <p><span class="card__bold">Project version:</span> 3 - Production release</p>

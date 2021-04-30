@@ -60,7 +60,9 @@ html {
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
-      grid-template-areas: "header main" "nav main" "footer main";
+      grid-template-areas: "header main"
+ "nav main"
+ "footer main";
 }
 
 .flex-container {
@@ -385,7 +387,8 @@ a:active {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      grid-template-areas: "line1 line1 ." ". line2 line2";
+      grid-template-areas: "line1 line1 ."
+ ". line2 line2";
   -webkit-animation: tilt-in-fwd-tl 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: tilt-in-fwd-tl 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 0.5s;
@@ -407,7 +410,10 @@ a:active {
       grid-template-columns: auto 1fr 1fr auto;
   -ms-grid-rows: auto 1fr 1fr auto;
       grid-template-rows: auto 1fr 1fr auto;
-      grid-template-areas: ". . . ." "leaf1 line3 . ." "leaf1 line4 line4 leaf2" ". . . .";
+      grid-template-areas: ". . . ."
+ "leaf1 line3 . ."
+ "leaf1 line4 line4 leaf2"
+ ". . . .";
   -webkit-animation: tilt-in-fwd-tr 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: tilt-in-fwd-tr 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 3.5s;
@@ -427,7 +433,10 @@ a:active {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "line5 line5 . . ." ". line6 line6 . ." ". . . . ." "line7 line7 line7 line7 line7";
+      grid-template-areas: "line5 line5 . . ."
+ ". line6 line6 . ."
+ ". . . . ."
+ "line7 line7 line7 line7 line7";
   -webkit-animation: slide-in-elliptic-top-fwd 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-elliptic-top-fwd 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   -webkit-animation-delay: 7s;
@@ -664,13 +673,13 @@ a:active {
           animation-delay: 8.5s;
 }
 
-.rainbow-verse5 {
+.rainbow__verse5 {
   text-align: center;
-  font-size: 20px;
-  -webkit-animation: colorRotate 6s linear 0s infinite;
-          animation: colorRotate 6s linear 0s infinite;
+  font-size: 27px;
+  -webkit-animation: colorRotate 5s linear 0s infinite;
+          animation: colorRotate 5s linear 0s infinite;
   margin: 0;
-  padding: 1px;
+  padding: 2.5px;
 }
 
 .verse-3__grid-container {
@@ -680,7 +689,13 @@ a:active {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-      grid-template-areas: ". one one one ." ". . . text-box ." ". two two two ." ". three three . ." ". . text-divide text-divide ." "img-one four four four img-two" ". . . . btn";
+      grid-template-areas: ". one one one ."
+ ". . . text-box ."
+ ". two two two ."
+ ". three three . ."
+ ". . text-divide text-divide ."
+ "img-one four four four img-two"
+ ". . . . btn";
   height: 100vh;
   font-size: 2rem;
 }
@@ -864,46 +879,49 @@ div.verse-3__grid-item_button {
   opacity: 0;
 }
 
-.verse-5-first {
+.verse__5--first {
   white-space: nowrap;
   padding: 20px;
+  font-size: 25px;
 }
 
-.verse-5-second {
+.verse__5--second {
   white-space: nowrap;
   padding: 20px;
+  font-size: 25px;
 }
 
-.verse-5-third {
+.verse__5--third {
   white-space: nowrap;
   padding: 20px;
+  font-size: 25px;
 }
 
-.verse-5-fourth {
+.verse__5--fourth {
   white-space: nowrap;
   padding: 20px;
+  font-size: 25px;
 }
 
-.div1-verse5 {
+.div1__verse5 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  font-family: 'Roboto', sans-serif;
 }
 
-.text-verse5 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+.text__verse5 {
+  font-size: 25px;
 }
 
-.rainbow-verse5 {
-  padding-left: 4px;
+.rainbow__verse5 {
+  padding-left: 10px;
+  font-size: 25px;
 }
 
-.love-verse5 {
+.love__verse5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -916,6 +934,30 @@ div.verse-3__grid-item_button {
   margin: auto;
   width: 100%;
   margin-bottom: 10%;
+}
+
+.verse-5__heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  margin: auto;
+  width: 50%;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+.verse-5__heart--size {
+  width: auto;
+  height: 65px;
+  -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 17s both;
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 15s both;
 }
 
 .about-box {
@@ -1071,7 +1113,8 @@ div.verse-3__grid-item_button {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto 1.8fr;
         grid-template-rows: auto 1.8fr;
-        grid-template-areas: "header" "main";
+        grid-template-areas: "header"
+ "main";
     overflow: hidden;
   }
   .flex-container {
@@ -1226,7 +1269,10 @@ div.verse-3__grid-item_button {
   .verse-2__grid-container--3 {
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: ". line5 line5 . . ." ". . line6 line6 . ." ". . . . . ." ". line7 line7 line7 line7 .";
+        grid-template-areas: ". line5 line5 . . ."
+ ". . line6 line6 . ."
+ ". . . . . ."
+ ". line7 line7 line7 line7 .";
   }
   .verse-2__line-1--1 {
     font-size: 1.5rem;
@@ -1369,6 +1415,30 @@ div.verse-3__grid-item_button {
     filter: blur(0px);
     opacity: 1;
     color: #000000;
+  }
+}
+
+@-webkit-keyframes box_color {
+  0% {
+    background: #FFFFFF;
+  }
+  50% {
+    background: #000000;
+  }
+  100% {
+    background: #FFFFFF;
+  }
+}
+
+@keyframes box_color {
+  0% {
+    background: #FFFFFF;
+  }
+  50% {
+    background: #000000;
+  }
+  100% {
+    background: #FFFFFF;
   }
 }
 
@@ -2014,14 +2084,36 @@ div.verse-3__grid-item_button {
   }
 }
 
-#verse4_sentence1 {
+@-webkit-keyframes verse4_sentence3_animation {
+  0% {
+    text-shadow: 20px 20px;
+    opacity: 0;
+  }
+  100% {
+    text-shadow: 0px 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes verse4_sentence3_animation {
+  0% {
+    text-shadow: 20px 20px;
+    opacity: 0;
+  }
+  100% {
+    text-shadow: 0px 0px;
+    opacity: 1;
+  }
+}
+
+#verse4__sentence1 {
   font-family: Winter, Arial, Helvetica, sans-serif;
   font-size: 24px;
   -webkit-animation: verse4_opasity 3s;
           animation: verse4_opasity 3s;
 }
 
-#verse4_sentence2 {
+#verse4__sentence2 {
   font-family: Kalam, Arial, Helvetica, sans-serif;
   font-size: 25px;
   -webkit-animation: verse4_opasity 3s;
@@ -2032,34 +2124,34 @@ div.verse-3__grid-item_button {
           animation-fill-mode: forwards;
 }
 
-#verse4_sentence3 {
+#verse4__sentence3 {
   font-family: Autumn, Arial, Helvetica, sans-serif;
   font-size: 50px;
-  -webkit-animation: verse4_opasity 3s;
-          animation: verse4_opasity 3s;
+  -webkit-animation: verse4_sentence3_animation 3s;
+          animation: verse4_sentence3_animation 3s;
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-#verse4_sentence3 #verse4_sentence3-line2 {
+#verse4__sentence3 #verse4__sentence3-line2 {
   font-size: 40px;
 }
 
-#verse4_sentence3 #verse4_sentence3-line3 {
+#verse4__sentence3 #verse4__sentence3-line3 {
   font-size: 20px;
 }
 
-#verse4_sentence3 #verse4_sentence3-line4 {
+#verse4__sentence3 #verse4__sentence3-line4 {
   font-size: 23px;
 }
 
-#verse4_sentence3 #verse4_sentence3-line5 {
+#verse4__sentence3 #verse4__sentence3-line5 {
   font-size: 18px;
 }
 
-#verse4_sentence4 {
+#verse4__sentence4 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 26px;
   -webkit-animation: verse4_opasity 3s;
@@ -2070,7 +2162,7 @@ div.verse-3__grid-item_button {
           animation-fill-mode: forwards;
 }
 
-#verse4_sentence4 #verse4_sentence4-right {
+#verse4__sentence4 #verse4__sentence4-right {
   font-size: 22px;
 }
 
@@ -2127,9 +2219,9 @@ div.verse-3__grid-item_button {
   margin-top: 2%;
 }
 
-.verse-5-first {
-  -webkit-animation: verse-5-first 0.6s cubic-bezier(0.23, 1, 0.32, 1) 3s both;
-  animation: verse-5-first 0.6s cubic-bezier(0.23, 1, 0.32, 1) 3s both;
+.verse__5--first {
+  -webkit-animation: verse-5-first 0.6s cubic-bezier(0.23, 1, 0.32, 1) 0.5s both;
+  animation: verse-5-first 0.6s cubic-bezier(0.23, 1, 0.32, 1) 0.5s both;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2186,9 +2278,9 @@ div.verse-3__grid-item_button {
   }
 }
 
-.verse-5-second {
-  -webkit-animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 5s both;
-  animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 5s both;
+.verse__5--second {
+  -webkit-animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 3s both;
+  animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 3s both;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2232,9 +2324,9 @@ div.verse-3__grid-item_button {
   }
 }
 
-.verse-5-third {
-  -webkit-animation: verse-5-third 0.65s cubic-bezier(0.23, 1, 0.32, 1) 8s both;
-  animation: verse-5-third 0.65s cubic-bezier(0.23, 1, 0.32, 1) 8s both;
+.verse__5--third {
+  -webkit-animation: verse-5-third 0.65s cubic-bezier(0.23, 1, 0.32, 1) 6s both;
+  animation: verse-5-third 0.65s cubic-bezier(0.23, 1, 0.32, 1) 6s both;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2260,6 +2352,23 @@ div.verse-3__grid-item_button {
    * animation roll-in-blurred-left
    * ----------------------------------------
    */
+@-webkit-keyframes verse__5--third {
+  0% {
+    -webkit-transform: translateX(-1000px) rotate(-720deg);
+    transform: translateX(-1000px) rotate(-720deg);
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes verse-5-third {
   0% {
     -webkit-transform: translateX(-1000px) rotate(-720deg);
@@ -2294,9 +2403,9 @@ div.verse-3__grid-item_button {
   }
 }
 
-.verse-5-fourth {
-  -webkit-animation: verse-5-fourth 0.6s cubic-bezier(0.23, 1, 0.32, 1) 11s both;
-  animation: verse-5-fourth 0.6s cubic-bezier(0.23, 1, 0.32, 1) 11s both;
+.verse__5--fourth {
+  -webkit-animation: verse-5-fourth 0.6s cubic-bezier(0.23, 1, 0.32, 1) 9s both;
+  animation: verse-5-fourth 0.6s cubic-bezier(0.23, 1, 0.32, 1) 9s both;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2308,7 +2417,7 @@ div.verse-3__grid-item_button {
           align-items: center;
   margin: auto;
   width: 50%;
-  margin-top: 2%;
+  margin-top: 0;
 }
 
 /* ----------------------------------------------
@@ -2322,6 +2431,27 @@ div.verse-3__grid-item_button {
    * animation slide-in-blurred-br
    * ----------------------------------------
    */
+@-webkit-keyframes verse__5--fourth {
+  0% {
+    -webkit-transform: translate(1000px, 1000px) skew(80deg, 10deg);
+    transform: translate(1000px, 1000px) skew(80deg, 10deg);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0, 0) skew(0deg, 0deg);
+    transform: translate(0, 0) skew(0deg, 0deg);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes verse-5-fourth {
   0% {
     -webkit-transform: translate(1000px, 1000px) skew(80deg, 10deg);
@@ -2365,8 +2495,8 @@ div.verse-3__grid-item_button {
 }
 
 .fade-in-love {
-  -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 13s both;
-  animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 13s both;
+  -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 11s both;
+  animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 11s both;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2405,6 +2535,124 @@ div.verse-3__grid-item_button {
     opacity: 0;
   }
   100% {
+    opacity: 1;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-4-25 15:41:29
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-4-25 15:50:44
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation slide-in-fwd-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
     opacity: 1;
   }
 }
