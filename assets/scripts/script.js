@@ -107,18 +107,14 @@ function playVerse1() {
         Whose eyes would never see.
     </p>
     <div class="verse1_smiley1">
-        <figure>
-        <img src="./assets/images/smiley.png">
-        </figure>
+        <img src="./assets/images/smiley.png">  
     </div>
     <div class="verse1_smiley2">
-        <figure>
         <img src="./assets/images/smiley.png">
-        </figure>
     </div>
     <svg class="verse1_svg" viewbox="0 0 490 150">
         <path id="curve" fill="transparent" 
-        d="M125.4,50.3c69.1,66.7,180.9,66.7,240,0"/>
+        d="M125.4,50.3c69.1,66.7,180.9,66.7,220,0"/>
         <text width="500">
             <textPath xlink:href="#curve">
                 She asked me with a timid smile,
