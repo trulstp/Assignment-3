@@ -144,7 +144,7 @@ a:active {
 .verse1_layout_box {
     display: inline-grid;
     grid-template-columns: 5% 25% 3% 3% 4% 15% 5% 10% 10% 20%;
-    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 10% 5% 10% 15% 10% 10% 10% 10%;
     opacity: 0.8;
     font-size: 1em;
     width: 80%;
@@ -156,8 +156,8 @@ a:active {
 .verse1_line1 {
   font-family: $standard-font;
   font-size: $d-standard-size;
-  grid-column: 5 / span 4;
-  grid-row: 3;
+  grid-column: 4 / span 5;
+  grid-row: 2;
   font-weight: map-get($font-weights, medium);
   animation-name: line1;
   animation-duration: 10s;
@@ -167,7 +167,7 @@ a:active {
   }
  
 .verse1_line2 {
-  grid-column: 4 / span 5;
+  grid-column: 3 / span 7;
   grid-row: 4;
   opacity: 0;
   font-size: $d-standard-size;
