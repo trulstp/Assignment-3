@@ -18,34 +18,41 @@
     }
 
     .verse1_layout_box {
-      grid-template-columns: 10% 25% 5% 5% 5% 20% 15% 10%;
-      grid-template-rows: 10% 15% 5% 10% 5% 15% 5% 15%;
+      grid-template-columns: 15% 20% 5% 5% 4% 25% 15% 10%;
+      grid-template-rows: 10% 15% 5% 10% 5% 5% 5% 10% 15%;
     }
 
     .verse1_line1 {
+      font-size: $d-small-size;
       grid-row: 2;
-      grid-column: 3 / span 4;
+      grid-column: 2 / span 7;
     }
     
     .verse1_line2 {
-      grid-column: 3 / span 4;
+      font-size: $d-small-size;
+      grid-column: 2 / span 7;
       grid-row: 3;
     }
 
     .verse1_smiley1 {
       grid-column: 3;
+      grid-row: 5;
     }
     .verse1_smiley2 {
-      grid-column: 5;
+      grid-column: 6;
+      grid-row: 5;
     }
     .verse1_svg {
       grid-row: 6;
-      grid-column: 1 / span 8;
+      grid-column: 1 / span 9;
     }
 
     .verse1_line4 {
+      width: 240px;
+      font-size: $d-small-size;
       grid-column: 2;
-      grid-row: 8;
+      grid-row: 9;
+      height: 80px;
     }
 
     .verse-2__grid-container--3 {
