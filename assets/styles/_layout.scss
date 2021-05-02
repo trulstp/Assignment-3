@@ -143,7 +143,7 @@ a:active {
 }
 .verse1_layout_box {
     display: inline-grid;
-    grid-template-columns: 10% 20% 9% 1% 5% 5% 10% 25% 10%;
+    grid-template-columns: 5% 25% 3% 3% 4% 15% 5% 10% 10% 20%;
     grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10%;
     opacity: 0.8;
     font-size: 1em;
@@ -155,7 +155,8 @@ a:active {
 
 .verse1_line1 {
   font-family: $standard-font;
-  grid-column: 5 / span 3;
+  font-size: $d-standard-size;
+  grid-column: 5 / span 4;
   grid-row: 3;
   font-weight: map-get($font-weights, medium);
   animation-name: line1;
@@ -166,9 +167,10 @@ a:active {
   }
  
 .verse1_line2 {
-  grid-column: 4 / span 4;
+  grid-column: 4 / span 5;
   grid-row: 4;
   opacity: 0;
+  font-size: $d-standard-size;
   font-weight: map-get($font-weights, medium);
   font-family: $standard-font;
   animation-name: line2;
@@ -180,7 +182,7 @@ a:active {
   }
 
 .verse1_smiley1 {
-  grid-column: 5;
+  grid-column: 6;
   grid-row: 5;
   opacity: 0;
   animation-name: smiley1;
@@ -200,7 +202,7 @@ a:active {
   }
 
 .verse1_svg {
-  grid-column: 2 / span 7;
+  grid-column: 2 / span 9;
   grid-row: 5;
   opacity: 0;
   text-decoration: underline;
@@ -213,13 +215,14 @@ a:active {
  
 .verse1_line4 {
   opacity: 0;
-  grid-column: 4;
+  grid-column: 6 / span 2;
   grid-row: 8;
+  font-size: $d-standard-size;
   font-weight: map-get($font-weights, bold);
   position: relative;
   bottom: 10px;
-  width: 200px;
-  height: 50px;
+  width: 250px;
+  height: 110px;
   padding: 15px 0px 0px 10px;
   background: $primary-color;
   -webkit-border-radius: 10px;
@@ -242,7 +245,7 @@ a:active {
   width: 0;
   z-index: 1;
   top: -40px;
-  left: 96px;
+  left: 88px;
     }
  
 .verse1_span_colour {

@@ -115,7 +115,7 @@ function playVerse1() {
     <svg class="verse1_svg" viewbox="0 0 490 150">
         <path id="curve" fill="transparent" 
         d="M125.4,50.3c69.1,66.7,180.9,66.7,220,0"/>
-        <text width="500">
+        <text width="500" transform="rotate(-5)">
             <textPath xlink:href="#curve">
                 She asked me with a timid smile,
             </textPath>
