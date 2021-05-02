@@ -378,8 +378,8 @@ function playVerse4() {
         },11000)
     }
 
-    function setColor(verse){
-        document.getElementById(verse).style.fill = "RGB(" + Math.floor(Math.random()*191) + "," + Math.floor(Math.random()*191) + "," + Math.floor(Math.random()*191) + ")";
+    function setColor(sentence){
+        document.getElementById(sentence).style.fill = "RGB(" + Math.floor(Math.random()*191) + "," + Math.floor(Math.random()*191) + "," + Math.floor(Math.random()*191) + ")";
     }
 }
 
